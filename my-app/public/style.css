@@ -1,0 +1,73 @@
+.Wrapper {
+    max-width: 1175px;
+    margin: 0 auto;
+}
+:root{
+    --orange: #ffbe1d;
+    --brown: #b9953c;
+    --green: #aec749;
+    --white: #fff;
+    --maintext: #000000;
+    --othertext1: #353535;
+    --othertext2: #232323;
+    --lighttext: #afafaf;
+}
+
+/*STYLES FOR HOMEPAGE*/
+
+.Blocks {
+    width: 1175px;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+/*STYLES FOR NAVBAR*/
+
+#Navbar {
+    width: 1920px;
+    height: 80px;
+    display: flex;
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
+}
+.Navbar-logo{
+    display: flex;
+    margin: auto ;
+}
+.Navbar-pages {
+    display: flex;
+    width: 780px;
+    margin: auto ;
+    justify-content: space-between;
+}
+.Navbar-pages a{
+    color: var(--maintext);
+}
+.Navbar-pages a:hover{
+    color: var(--orange);
+}
+.Navbar-socialmedia{
+    display: flex;
+    margin: auto ;
+}
+.Navbar-socialmedia a{
+    color: var(--maintext);
+}
+.Navbar-email{
+    display: flex;
+    margin: auto ;
+    margin: auto 0px auto 0;
+}
+.Navbar-contacts{
+    display: flex;
+    margin: auto ;
+    flex-direction: column;
+}
+/*STYLES FOR HOMEPAGE-HEADER*/
+#Header{
+    width: 1920px;
+    height: 700px;
+    background-image: url(HeaderBackground.png);
+}
+
