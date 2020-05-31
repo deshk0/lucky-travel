@@ -6,7 +6,7 @@ import {
     EquipmentBox7a, EquipmentBox8a, EquipmentBox9a, EquipmentBox10a, EquipmentBox11a, EquipmentBox12a, EquipmentBox13a   
 } from './equpmentBoxes';
 import { Footer } from '../footer';
-
+ 
 
 
 
@@ -116,15 +116,12 @@ class AboutUs extends React.Component{
                             что бы сделать для вас<br /> самые захватывающие и запоминающиеся<br />
                             авторские туры.
                         </div>
-                        <div className="AboutUs-info4">
-                            Приглашаем Вас посетить самые<br /> захватывающие места
-                            Полтавы, сплавится вниз по крутым течениям Ворсклы,
-                            а так же побывать в десятках мест по всему миру!
+                        <div className="AboutUs-info4">Приглашаем Вас путешествовать  вместе с нами ! На байдарках по рекам Украины, горным вершинам и морям по всему миру
                         </div>
                         <div className="AboutUs-more"><a href="/aboutUs">УЗНАТЬ БОЛЬШЕ</a></div>
                     </div>
                     <div>
-                        <iframe className="AboutUs-video" src="https://www.youtube.com/embed/WQ91Mql2X-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe className="AboutUs-video" src="https://www.youtube.com/embed/7RX_Koy77Vo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     </div>
                     <div style={{display:'flex',justifyContent:'center'}}>

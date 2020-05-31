@@ -98,124 +98,25 @@ class KayakAlloys extends React.Component{
 
         this.boxes = [
             <KayakAlloysbox 
-                    
-            name="Однодневный  по р. Коломак" secodname="(весенний экстрим) с.Верхолы- Полтава                "
-            days="01 День"   daysI = '1' 
-            nights="00 ночей" 
-            date="04.04.2020"   dateI = '4' mountsI = "4"
-            time="05:00" 
-            price="650 грн"    priceI = '650'  
-
-            human="/чел"
-            
-            />,
-            <KayakAlloysbox 
         
-            name="Однодневный  по р. Ворскла" secodname="(Шикарный вид) с.Михайловка- с.Гавронци                "
-            days="01 День"   daysI = '1' 
-            nights="00 ночей" 
-            date="05.04.2020"   dateI = '5' mountsI = "4"
-            time="05:00" 
-            price="650 грн"    priceI = '650' 
-
-            human="/чел"
-
-            
-            />,
-            <KayakAlloysbox 
-        
-            name="Двухдневный  по р. Ворскла" secodname="(Пасхальный уикенд) с.Кунцево - с.Белики                "
+            name="По реке Псёл" secodname="(весёлое родео) с. Климентово - с. Пылевка                "
             days="02 Дня"   daysI = '2' 
-            nights="01 ночь" 
-            date="18.04.2020"   dateI = '18' mountsI = "4"
-            time="05:00" 
-            price="1300 грн"    priceI = '1300'
-
-            human="/чел"
-
-            
-            />,
-            <KayakAlloysbox 
-                    
-            name="Однодневный  по р. Ворскла" secodname="(прогулочный) с Михайловка- с.Гавронцы.                "
-            days="01 День"   daysI = '1' 
-            nights="00 ночей" 
-            date="26.04.2020"   dateI = '26' mountsI = "4"
-            time="05:00" 
-            price="650 грн"    priceI = '650'
-
-            human="/чел"
-            
-            />,
-            <KayakAlloysbox 
-        
-            name="Lucky приключения" secodname="(По р. Берестовая и р. Орель                    )"
-            days="04 Дня"   daysI = '4' 
-            nights="03 ночи" 
-            date="30.04.2020"   dateI = '30' mountsI = "4"
-            time="05:00" 
-            price="разраба-"    priceI = '10000000'
-            
-            human="тывается"
-
-            />,
-            <KayakAlloysbox 
-        
-            name="Трёхдневный  по р. Ворскла " secodname="(г. Кобеляки- пгт.Светлогорское                    )"
-            days="03 Дня"   daysI = '3' 
             nights="02 ночи" 
-            date="08.05.2020"   dateI = '8' mountsI = "5"
-            time="05:00" 
-            price="1800 грн"    priceI = '1800'
-            
-            human="/чел"
-
-            />,
-            <KayakAlloysbox 
-                    
-            name="Двухдневный  по р. Ворскла" secodname="(Этот День Победы) с. Писаревщина- с.Гавронци                "
-            days="02 Дня"   daysI = '2' 
-            nights="01 ночь" 
-            date="09.05.2020"   dateI = '9' mountsI = "5"
-            time="05:00" 
-            price="1300 грн"    priceI = '1300'
+            date="19.06.2020"   dateI = '19' mountsI = "6"
+            time="17:30" 
+            price="1350 грн"    priceI = '1350'
 
             human="/чел"
             
             />,
             <KayakAlloysbox 
         
-            name="Однодневный  по р. Псёл" secodname="(Ночевка на базе в домиках)"
-            days="02 Дня"   daysI = '2' 
-            nights="01 ночь" 
-            date="16.05.2020"   dateI = '16' mountsI = "5"
-            time="05:00" 
-            price="1650 грн"    priceI = '1650'
-
-            human="/чел"
-
-            
-            />,
-            <KayakAlloysbox 
-        
-            name="по р. Ворскла Сумская обл." secodname="(весёлое родео) с. Климентово - с. Пылевка                "
-            days="02 Дня"   daysI = '2' 
-            nights="01 ночь" 
-            date="22.05.2020"   dateI = '22' mountsI = "5"
-            time="05:00" 
-            price="1900 грн"    priceI = '1900'
-
-            human="/чел"
-            
-            />,
-            <KayakAlloysbox 
-        
-            name="Однодневный  по р. Ворскла" secodname="(с.Писаревщина - с.Гавронцы                    )"
-            days="02 Дня"   daysI = '2' 
-            nights="01 ночь" 
-            date="30.05.2020"   dateI = '30' mountsI = "5"
-            time="05:00" 
-            price="1300 грн"    priceI = '1300'
+            name="Трёхдневный  по р. Ворскла" secodname="(с.Писаревщина - с.Гавронцы                    )"
+            days="03 Дня"   daysI = '3' 
+            nights="03 ночи" 
+            date="26.06.2020"   dateI = '26' mountsI = "6"
+            time="17:30" 
+            price="1750 грн"    priceI = '1750'
             
             human="/чел"
 
@@ -226,128 +127,29 @@ class KayakAlloys extends React.Component{
         this.state = {
             boxes : [
                 <KayakAlloysbox 
-                    
-            name="Однодневный  по р. Коломак" secodname="(весенний экстрим) с.Верхолы- Полтава                "
-            days="01 День"   daysI = '1' 
-            nights="00 ночей" 
-            date="04.04.2020"   dateI = '4' mountsI = "4"
-            time="05:00" 
-            price="650 грн"    priceI = '650'  
-
-            human="/чел"
             
-            />,
-            <KayakAlloysbox 
-        
-            name="Однодневный  по р. Ворскла" secodname="(Шикарный вид) с.Михайловка- с.Гавронци                "
-            days="01 День"   daysI = '1' 
-            nights="00 ночей" 
-            date="05.04.2020"   dateI = '5' mountsI = "4"
-            time="05:00" 
-            price="650 грн"    priceI = '650' 
-
-            human="/чел"
-
+                name="По реке Псёл" secodname="(весёлое родео) с. Климентово - с. Пылевка                "
+                days="02 Дня"   daysI = '2' 
+                nights="02 ночи" 
+                date="19.06.2020"   dateI = '19' mountsI = "6"
+                time="17:30" 
+                price="1350 грн"    priceI = '1350'
+    
+                human="/чел"
+                
+                />,
+                <KayakAlloysbox 
             
-            />,
-            <KayakAlloysbox 
-        
-            name="Двухдневный  по р. Ворскла" secodname="(Пасхальный уикенд) с.Кунцево - с.Белики                "
-            days="02 Дня"   daysI = '2' 
-            nights="01 ночь" 
-            date="18.04.2020"   dateI = '18' mountsI = "4"
-            time="05:00" 
-            price="1300 грн"    priceI = '1300'
-
-            human="/чел"
-
-            
-            />,
-            <KayakAlloysbox 
-                    
-            name="Однодневный  по р. Ворскла" secodname="(прогулочный) с Михайловка- с.Гавронцы.                "
-            days="01 День"   daysI = '1' 
-            nights="00 ночей" 
-            date="26.04.2020"   dateI = '26' mountsI = "4"
-            time="05:00" 
-            price="650 грн"    priceI = '650'
-
-            human="/чел"
-            
-            />,
-            <KayakAlloysbox 
-        
-            name="Lucky приключения" secodname="(По р. Берестовая и р. Орель                    )"
-            days="04 Дня"   daysI = '4' 
-            nights="03 ночи" 
-            date="30.04.2020"   dateI = '30' mountsI = "4"
-            time="05:00" 
-            price="разраба-"    priceI = '10000000'
-            
-            human="тывается"
-
-            />,
-            <KayakAlloysbox 
-        
-            name="Трёхдневный  по р. Ворскла " secodname="(г. Кобеляки- пгт.Светлогорское                    )"
-            days="03 Дня"   daysI = '3' 
-            nights="02 ночи" 
-            date="08.05.2020"   dateI = '8' mountsI = "5"
-            time="05:00" 
-            price="1800 грн"    priceI = '1800'
-            
-            human="/чел"
-
-            />,
-            <KayakAlloysbox 
-                    
-            name="Двухдневный  по р. Ворскла" secodname="(Этот День Победы) с. Писаревщина- с.Гавронци                "
-            days="02 Дня"   daysI = '2' 
-            nights="01 ночь" 
-            date="09.05.2020"   dateI = '9' mountsI = "5"
-            time="05:00" 
-            price="1300 грн"    priceI = '1300'
-
-            human="/чел"
-            
-            />,
-            <KayakAlloysbox 
-        
-            name="Однодневный  по р. Псёл" secodname="(Ночевка на базе в домиках)"
-            days="02 Дня"   daysI = '2' 
-            nights="01 ночь" 
-            date="16.05.2020"   dateI = '16' mountsI = "5"
-            time="05:00" 
-            price="1650 грн"    priceI = '1650'
-
-            human="/чел"
-
-            
-            />,
-            <KayakAlloysbox 
-        
-            name="по р. Ворскла Сумская обл." secodname="(весёлое родео) с. Климентово - с. Пылевка                "
-            days="02 Дня"   daysI = '2' 
-            nights="01 ночь" 
-            date="22.05.2020"   dateI = '22' mountsI = "5"
-            time="05:00" 
-            price="1900 грн"    priceI = '1900'
-
-            human="/чел"
-            
-            />,
-            <KayakAlloysbox 
-        
-            name="Однодневный  по р. Ворскла" secodname="(с.Писаревщина - с.Гавронцы                    )"
-            days="02 Дня"   daysI = '2' 
-            nights="01 ночь" 
-            date="30.05.2020"   dateI = '30' mountsI = "5"
-            time="05:00" 
-            price="1300 грн"    priceI = '1300'
-            
-            human="/чел"
-
-            />
+                name="Трёхдневный  по р. Ворскла" secodname="(с.Писаревщина - с.Гавронцы                    )"
+                days="03 Дня"   daysI = '3' 
+                nights="03 ночи" 
+                date="26.06.2020"   dateI = '26' mountsI = "6"
+                time="17:30" 
+                price="1750 грн"    priceI = '1750'
+                
+                human="/чел"
+    
+                />
             ],
 
             FromCheapToExpensive: false,
@@ -363,7 +165,6 @@ class KayakAlloys extends React.Component{
             const className = 'KayakAlloysMob-KayakAlloysbox_active'
             box[0].classList.toggle(className)
             box[1].classList.toggle(className)
-            box[2].classList.toggle(className)
         }
 
         //box.map( item => item.classList.toggle('KayakAlloysMob-KayakAlloysbox_active'))
@@ -397,7 +198,6 @@ class KayakAlloys extends React.Component{
             const className = 'KayakAlloysMob-KayakAlloysbox_active'
             box[0].classList.toggle(className)
             box[1].classList.toggle(className)
-            box[2].classList.toggle(className)
         }
 
         //const newArr = arr.map(item => item.number)
@@ -408,10 +208,10 @@ class KayakAlloys extends React.Component{
             if (a.props.mountsI < b.props.mountsI) return -1;
         });
         const newArr2 = newArr1.sort(function(a, b) {
-            if(a.props.mountsI == b.props.mountsI){
-            if (a.props.dateI > b.props.dateI) return -1;
-            if (a.props.dateI == b.props.dateI) return 0;
-            if (a.props.dateI < b.props.dateI) return 1;
+            if(a.props.mountsI === b.props.mountsI){
+                if (a.props.dateI > b.props.dateI) return 1;
+                if (a.props.dateI == b.props.dateI) return 0;
+                if (a.props.dateI < b.props.dateI) return -1;
             }
         });
         //const newArr2 = newArr1.map(item => item.box)

@@ -88,235 +88,54 @@ class Content extends React.Component{
 class KayakAlloysSide extends React.Component{
     constructor(){
         super()
-        this.tours =[
+        this.tours =[                                  
         <TourBoxMini
             photo="kayak.icon.png" width="120px" height="100px"
-
-            name="Однодневный  по р. Коломак" secodname="(весенний экстрим) с.Верхолы- Полтава                "
-            days="01 День"   daysI = '1' 
-            nights="00 ночей" 
-            date="04.04.2020"   dateI = '4' mountsI = "4"
-            time="05:00" 
-            price="650 грн./чел"    priceI = '650'
-            button = "Узнать больше"
-            href = "/kayakalloysregister"     
-        />,
-        <TourBoxMini
-            photo="kayak.icon.png" width="120px" height="100px"
-
-            name="Однодневный  по р. Ворскла" secodname="(Шикарный вид) с.Михайловка- с.Гавронци                "
-            days="01 День"   daysI = '1' 
-            nights="00 ночей" 
-            date="05.04.2020"   dateI = '5' mountsI = "4"
-            time="05:00" 
-            price="650 грн./чел"    priceI = '650'
-            button = "Узнать больше"
-            href = "/kayakalloysregister"     
-        />,                    
-        <TourBoxMini
-            photo="kayak.icon.png" width="120px" height="100px"
-
-            name="Двухдневный  по р. Ворскла" secodname="(Пасхальный уикенд) с.Кунцево - с.Белики                "
-            days="02 Дня"   daysI = '2' 
-            nights="01 ночь" 
-            date="18.04.2020"   dateI = '18' mountsI = "4"
-            time="05:00" 
-            price="1300 грн./чел"    priceI = '1300'
-            button = "Узнать больше"
-            href = "/kayakalloysregister"     
-        />,                    
-        <TourBoxMini
-            photo="kayak.icon.png" width="120px" height="100px"
-            name="Однодневный  по р. Ворскла" secodname="(прогулочный) с Михайловка- с.Гавронцы.                "
-            days="01 День"   daysI = '1' 
-            nights="00 ночей" 
-            date="26.04.2020"   dateI = '26' mountsI = "4"
-            time="05:00" 
-            price="650 грн./чел"    priceI = '650'
-            button = "Узнать больше"
-            href = "/kayakalloysregister"     
-        />,                    
-        <TourBoxMini
-            photo="kayak.icon.png" width="120px" height="100px"
-            name="Lucky приключения" secodname="(По р. Берестовая и р. Орель                    )"
-            days="04 Дня"   daysI = '4' 
-            nights="03 ночи" 
-            date="30.04.2020"   dateI = '30' mountsI = "4"
-            time="05:00" 
-            price="стоимость в разработке."    priceI = '10000000'
-            button = "Узнать больше"
-            href = "/kayakalloysregister"     
-        />,                    
-        <TourBoxMini
-            photo="kayak.icon.png" width="120px" height="100px"
-            name="Трёхдневный  по р. Ворскла " secodname="(г. Кобеляки- пгт.Светлогорское                    )"
+            name="Трёхдневный  по р. Ворскла Сумская обл." secodname=""
             days="03 Дня"   daysI = '3' 
+            nights="03 ночи" 
+            date="26.06.2020"   dateI = '26' mountsI = "6"
+            time="17:30" 
+            price="1750 грн./чел"    priceI = '1750'
+            button = "Узнать больше"
+            href = "/kayakalloysregister"     
+        />,                    
+        <TourBoxMini
+            photo="kayak.icon.png" width="120px" height="100px"
+            name="По реке Псёл" secodname=""
+            days="02 Дня"   daysI = '2' 
             nights="02 ночи" 
-            date="08.05.2020"   dateI = '8' mountsI = "5"
-            time="05:00" 
-            price="1800 грн./чел"    priceI = '1800'
-            button = "Узнать больше"
-            href = "/kayakalloysregister"     
-        />,                    
-        <TourBoxMini
-            photo="kayak.icon.png" width="120px" height="100px"
-            name="Двухдневный  по р. Ворскла" secodname="(Этот День Победы) с. Писаревщина- с.Гавронци                "
-            days="02 Дня"   daysI = '2' 
-            nights="01 ночь" 
-            date="09.05.2020"   dateI = '9' mountsI = "5"
-            time="05:00" 
-            price="1300 грн./чел"    priceI = '1300'
-            button = "Узнать больше"
-            href = "/kayakalloysregister"     
-        />,                    
-        <TourBoxMini
-            photo="kayak.icon.png" width="120px" height="100px"
-            name="Однодневный  по р. Псёл" secodname="(Ночевка на базе в домиках)"
-            days="02 Дня"   daysI = '2' 
-            nights="01 ночь" 
-            date="16.05.2020"   dateI = '16' mountsI = "5"
-            time="05:00" 
-            price="1650 грн./чел"    priceI = '1650'
-            button = "Узнать больше"
-            href = "/kayakalloysregister"     
-        />,                                  
-        <TourBoxMini
-            photo="kayak.icon.png" width="120px" height="100px"
-            name="Двухдневный  по р. Ворскла Сумская обл." secodname="(весёлое родео) с. Климентово - с. Пылевка                "
-            days="02 Дня"   daysI = '2' 
-            nights="01 ночь" 
-            date="22.05.2020"   dateI = '22' mountsI = "5"
-            time="05:00" 
-            price="1900 грн./чел"    priceI = '1900'
-            button = "Узнать больше"
-            href = "/kayakalloysregister"     
-        />,                    
-        <TourBoxMini
-            photo="kayak.icon.png" width="120px" height="100px"
-            name="Однодневный  по р. Ворскла" secodname="(с.Писаревщина - с.Гавронцы                    )"
-            days="02 Дня"   daysI = '2' 
-            nights="01 ночь" 
-            date="30.05.2020"   dateI = '30' mountsI = "5"
-            time="05:00" 
-            price="1300 грн./чел"    priceI = '1300'
+            date="19.06.2020"   dateI = '19' mountsI = "6"
+            time="17:30" 
+            price="1350 грн./чел"    priceI = '1350'
             button = "Узнать больше"
             href = "/kayakalloysregister"     
         />,  
         ]
         this.state ={
-            tours: [
-
-            <TourBoxMini
-                photo="kayak.icon.png" width="120px" height="100px"
-                name="Однодневный  по р. Коломак" secodname="(весенний экстрим) с.Верхолы- Полтава                "
-                days="01 День"   daysI = '1' 
-                nights="00 ночей" 
-                date="04.04.2020"   dateI = '4' mountsI = "4"
-                time="05:00" 
-                price="650 грн./чел"    priceI = '650'
-                button = "Узнать больше"
-                href = "/kayakalloysregister"     
-            />,
-            <TourBoxMini
-                photo="kayak.icon.png" width="120px" height="100px"
-                name="Однодневный  по р. Ворскла" secodname="(Шикарный вид) с.Михайловка- с.Гавронци                "
-                days="01 День"   daysI = '1' 
-                nights="00 ночей" 
-                date="05.04.2020"   dateI = '5' mountsI = "4"
-                time="05:00" 
-                price="650 грн./чел"    priceI = '650'
-                button = "Узнать больше"
-                href = "/kayakalloysregister"     
-            />,                    
-            <TourBoxMini
-                photo="kayak.icon.png" width="120px" height="100px"
-                name="Двухдневный  по р. Ворскла" secodname="(Пасхальный уикенд) с.Кунцево - с.Белики                "
-                days="02 Дня"   daysI = '2' 
-                nights="01 ночь" 
-                date="18.04.2020"   dateI = '18' mountsI = "4"
-                time="05:00" 
-                price="1300 грн./чел"    priceI = '1300'
-                button = "Узнать больше"
-                href = "/kayakalloysregister"     
-            />,                    
-            <TourBoxMini
-                photo="kayak.icon.png" width="120px" height="100px"
-                name="Однодневный  по р. Ворскла" secodname="(прогулочный) с Михайловка- с.Гавронцы.                "
-                days="01 День"   daysI = '1' 
-                nights="00 ночей" 
-                date="26.04.2020"   dateI = '26' mountsI = "4"
-                time="05:00" 
-                price="650 грн./чел"    priceI = '650'
-                button = "Узнать больше"
-                href = "/kayakalloysregister"     
-            />,                    
-            <TourBoxMini
-                photo="kayak.icon.png" width="120px" height="100px"
-                name="Lucky приключения" secodname="(По р. Берестовая и р. Орель                    )"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula luctus placerat. Vivamus posuere viverra tristique. Sed elementum, elit quis fringilla laoreet, leo nunc scelerisque tortor, porttitor sodales sem enim vitae nisl. Vivamus tristique mi eget quam semper lacinia. Integer in quam hendrerit, tempus quam vitae, sodales sem. Vivamus gravida lacus metus, a aliquet lacus efficitur id."
-                days="04 Дня"   daysI = '4' 
-                nights="03 ночи" 
-                date="30.04.2020"   dateI = '30' mountsI = "4"
-                time="05:00" 
-                price="стоимость в разработке."    priceI = '10000000'
-                button = "Узнать больше"
-                href = "/kayakalloysregister"     
-            />,                    
-            <TourBoxMini
-                photo="kayak.icon.png" width="120px" height="100px"
-                name="Трёхдневный  по р. Ворскла " secodname="(г. Кобеляки- пгт.Светлогорское                    )"
-                days="03 Дня"   daysI = '3' 
-                nights="02 ночи" 
-                date="08.05.2020"   dateI = '8' mountsI = "5"
-                time="05:00" 
-                price="1800 грн./чел"    priceI = '1800'
-                button = "Узнать больше"
-                href = "/kayakalloysregister"     
-            />,                    
-            <TourBoxMini
-                photo="kayak.icon.png" width="120px" height="100px"
-                name="Двухдневный  по р. Ворскла" secodname="(Этот День Победы) с. Писаревщина- с.Гавронци                "
-                days="02 Дня"   daysI = '2' 
-                nights="01 ночь" 
-                date="09.05.2020"   dateI = '9' mountsI = "5"
-                time="05:00" 
-                price="1300 грн./чел"    priceI = '1300'
-                button = "Узнать больше"
-                href = "/kayakalloysregister"     
-            />,                    
-            <TourBoxMini
-                photo="kayak.icon.png" width="120px" height="100px"
-                name="Однодневный  по р. Псёл" secodname="(Ночевка на базе в домиках)"
-                days="02 Дня"   daysI = '2' 
-                nights="01 ночь" 
-                date="16.05.2020"   dateI = '16' mountsI = "5"
-                time="05:00" 
-                price="1650 грн./чел"    priceI = '1650'
-                button = "Узнать больше"
-                href = "/kayakalloysregister"     
-            />,                                  
-            <TourBoxMini
-                photo="kayak.icon.png" width="120px" height="100px"
-                name="Двухдневный  по р. Ворскла Сумская обл." secodname="(весёлое родео) с. Климентово - с. Пылевка                "
-                days="02 Дня"   daysI = '2' 
-                nights="01 ночь" 
-                date="22.05.2020"   dateI = '22' mountsI = "5"
-                time="05:00" 
-                price="1900 грн./чел"    priceI = '1900'
-                button = "Узнать больше"
-                href = "/kayakalloysregister"     
-            />,                    
-            <TourBoxMini
-                photo="kayak.icon.png" width="120px" height="100px"
-                name="Однодневный  по р. Ворскла" secodname="(с.Писаревщина - с.Гавронцы                    )"
-                days="02 Дня"   daysI = '2' 
-                nights="01 ночь" 
-                date="30.05.2020"   dateI = '30' mountsI = "5"
-                time="05:00" 
-                price="1300 грн./чел"    priceI = '1300'
-                button = "Узнать больше"
-                href = "/kayakalloysregister"     
-            />,                    
+            tours: [                          
+                <TourBoxMini
+                    photo="kayak.icon.png" width="120px" height="100px"
+                    name="Трёхдневный  по р. Ворскла Сумская обл." secodname=""
+                    days="03 Дня"   daysI = '3' 
+                    nights="03 ночи" 
+                    date="26.06.2020"   dateI = '26' mountsI = "6"
+                    time="17:30" 
+                    price="1750 грн./чел"    priceI = '1750'
+                    button = "Узнать больше"
+                    href = "/kayakalloysregister"     
+                />,                    
+                <TourBoxMini
+                    photo="kayak.icon.png" width="120px" height="100px"
+                    name="По реке Псёл" secodname=""
+                    days="02 Дня"   daysI = '2' 
+                    nights="02 ночи" 
+                    date="19.06.2020"   dateI = '19' mountsI = "6"
+                    time="17:30" 
+                    price="1350 грн./чел"    priceI = '1350'
+                    button = "Узнать больше"
+                    href = "/kayakalloysregister"     
+                />,                 
             ],
             FromCheapToExpensive: false,
             FromExpensiveToCheap: false,
