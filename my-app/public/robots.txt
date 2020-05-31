@@ -1,3 +1,19 @@
-# https://www.robotstxt.org/robotstxt.html
+Host: https://lucky-travel.pl.ua
+
+User-agent: Googlebot
+Disallow: /aboutus/
+Disallow: /thankspage/
+Disallow: /formmobile/
+Disallow: /kayakalloysmob/
+Disallow: /kayakalloysreg/
+Disallow: /kayakalloysregister/
+Disallow: /kayakalloyspers/
+Disallow: /authorstours/
+Disallow: /equipmentmobile/
+Disallow: /equipmentreg/
+
 User-agent: *
-Disallow:
+Allow: /
+
+Sitemap: https://www.lucky-travel.pl.ua/sitemap.xml
+

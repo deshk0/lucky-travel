@@ -1,8 +1,55 @@
+@font-face {
+    font-family: 'HELEVETICAREGULAR';
+    
+    font-style: normal;
+    src: url(./HELVETICAREGULAR.TTF);
+}
+@font-face {
+    font-family: 'HELEVETICABOLD';
+    
+    font-style: normal;
+    src: url(./HELVETICABOLD.TTF);
+}
+@font-face {
+    font-family: 'HELEVETICAHEAVY';
+    
+    font-style: normal;
+    src: url(./HELVETICAHEAVY.TTF);
+}
+@font-face {
+    font-family: 'HELEVETICALIGHT';
+    
+    font-style: normal;
+    src: url(./HELVETICALIGHT.TTF);
+}
+body{
+    font-family: 'HELEVETICAREGULAR';
+}
+
+#CoolRaccoons{
+    margin-top: 15px;
+    text-align: center;
+    
+
+}
+.GoToMobile{
+    height: 0px;
+    width: 0px;
+    font-size: 0px;
+    visibility: hidden;
+}
+
 .Wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     max-width: 1175px;
     margin: 0 auto;
+    flex-grow: 1;
+    height: 100%;
 }
 :root{
+    --blackOrange: #f29736;
     --orange: #ffbe1d;
     --brown: #b9953c;
     --green: #aec749;
@@ -11,6 +58,14 @@
     --othertext1: #353535;
     --othertext2: #232323;
     --lighttext: #afafaf;
+    --mainbackground: #f7f7f7;
+    --blue: #7acff0;
+    --ligthgray: #f8f8f7;
+    --othertext3: #2d3650;
+    --gray: #b6b6b6 ;
+    --telephoneColor: #d7d7d7;
+    --telephoneColorLight: #bababa;
+    --telephoneDark: #6e6e6e;
 }
 
 /*STYLES FOR HOMEPAGE*/
@@ -18,19 +73,118 @@
 .Blocks {
     width: 1175px;
     display: flex;
-    justify-content: center;
-    background-color: red;
 }
 /*STYLES FOR NAVBAR*/
+#GoogleMap{
+    margin-Top:20px;
+    width: 500px; 
+    height: 350px;
+}
 
 #Navbar {
-    width: 1920px;
     height: 80px;
     display: flex;
+    justify-content: space-around;
     background-color: var(--white);
     position: sticky;
     top: 0;
+
+    box-shadow: 0px 0px 3px 0.001px var(--othertext1);
+    font-family: 'HELEVETICALIGHT';
 }
+/*---------------------------------------------------------------------------------------------NAVBAR MOBILE*/
+.NavbarMobile-burgerMenu{
+    margin: 0px 0px;
+}
+.burgerMenu-button{
+    width: 0px;
+    height: 0px;
+    background-color: var(--othertext1);
+    border-radius: 0%;
+    position: relative;
+}
+.burgerMenu-button-span,
+.burgerMenu-button-span::before,
+.burgerMenu-button-span::after {
+    position: absolute;
+    top: 0%; margin-top: 0px;
+    left: 0%; margin-left: 0px;
+    width: 0px;
+    height: 0px;
+    background-color: var(--white);
+}
+.burgerMenu-button-span::before,
+.burgerMenu-button-span::after{
+    content: '';
+    display: block;
+    transition: 0s;
+}
+.burgerMenu-button-span::before{
+    transform: translateY(0px);
+    margin-left: 0px;
+}
+.burgerMenu-button-span::after{
+    transform: translateY(px);
+    margin-left: 0px;
+}
+
+.burgerMenu-button_active span{
+    transform: rotate(0deg);
+}
+.burgerMenu-button_active span:before{
+    transform: rotate(0deg);
+    width: 0px;
+    transform-origin: left bottom;
+}
+.burgerMenu-button_active span:after{
+    transform: rotate(0deg);
+    width: 0px;
+    transform-origin: left top;
+
+}
+.NavbarMobile-burgerMenu-block{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    transition: 0s;
+    transition-delay: 0s;
+    transform-origin: top;
+
+
+    height: 0vh;
+    width: 0%;
+}
+.NavbarMobile-burgerMenu-block_active{
+    transition: 0s;
+    height: 0vh;
+    width: 0%;
+    transform-origin: top;
+    opacity: 0;
+}
+
+.NavbarMobile-burgermenu-link{
+    margin: 0px 0px;
+    font-family: "HELEVETICABOLD";
+    color: var(--maintext);
+
+    transition: 0s;
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+}
+.NavbarMobile-burgermenu-link_active{
+    margin: 0px 0px;
+    font-family: "HELEVETICABOLD";
+    color: var(--maintext);
+
+    transition-delay: 0s;
+    transform: scaleY(0);
+    opacity: 0;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+
 .Navbar-logo{
     display: flex;
     margin: auto ;
@@ -41,12 +195,20 @@
     margin: auto ;
     justify-content: space-between;
 }
+.Navbar-pages-box{
+    height: 71px;
+    display: flex;
+}
 .Navbar-pages a{
     color: var(--maintext);
+    font-family: 'HELEVETICAREGULAR';
+    margin-top: 28px;
 }
+
 .Navbar-pages a:hover{
     color: var(--orange);
 }
+
 .Navbar-socialmedia{
     display: flex;
     margin: auto ;
@@ -56,18 +218,1853 @@
 }
 .Navbar-email{
     display: flex;
-    margin: auto ;
-    margin: auto 0px auto 0;
+    margin: auto 0;
 }
 .Navbar-contacts{
     display: flex;
     margin: auto ;
     flex-direction: column;
 }
-/*STYLES FOR HOMEPAGE-HEADER*/
-#Header{
-    width: 1920px;
-    height: 700px;
-    background-image: url(HeaderBackground.png);
+.Navbar-socialmedia-img{
+    width: 20px;
 }
+.Navbar-socialmedia-box{
+    display: flex;
+    justify-content: center;
+    line-height: 2.5;
+    height: 30px;
+    width: 30px;
+    border-radius: 100px;
+    margin: 0px 4px;
+}
+/*STYLES FOR THANKS PAGE*/
+
+.Thankspage-logo{
+    width: 200px;
+    margin-top: 100px;
+}
+.Thankspage-headliner{
+    font-size: 42px;
+    font-family: "HELEVETICABOLD";
+    margin-top: 20px;
+    text-align: center
+}
+.Thankspage-button a{
+    font-size: 32px;
+    color: var(--orange);
+    font-family: "HELEVETICAREGULAR";
+}
+.Thankspage-button a:hover{
+    color: var(--blackOrange);
+}
+.Thankspage-button{
+    margin-top: 30px;
+    margin-bottom: 400px;
+}
+
+
+/*STYLES FOR HOMEPAGE-HEADER*/
+#Header{    
+    height: 800px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(HeaderBackgroundMOBILE.jpg);
+}
+
+.mobile-form-input{
+    padding: 0px;
+
+    visibility: hidden;
+}
+.mobileformbox{
+    width: 0px;
+}
+.mobile-form-button{
+    padding: 0px;
+    font-size: 0px;
+    border: none;
+    visibility: hidden;
+}
+.Header-headline1{
+    padding-top: 75px;
+    padding-bottom: 8px;
+
+    font-size: 72px;
+    letter-spacing: 5px;
+    font-family: 'HELEVETICAHEAVY';
+    color: var(--white);
+}
+.Header-headlinebox{
+    display: flex;
+}
+.Header-headline2{
+    font-size: 44px;
+    line-height: 48px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: 'HELEVETICALIGHT';
+    color: var(--white);
+}
+.Header-headline3{
+    font-size: 0px;
+    line-height: 0px;
+    letter-spacing: 0px;
+    font-family: 'HELEVETICAREGULAR';
+    color: var(--white);
+}
+.Header-form-ourUs{
+    color: var(--white);
+    margin-bottom: 45px;
+    font-family: 'HELEVETICAHEAVY';
+    font-size: 14px;
+}
+.Header-form-ourUs a:hover{
+    color: var(--orange);
+}
+.Header-line{
+    margin-top: 42px;
+    margin-bottom: 34px;
+    width: 55px;
+    height: 1px;
+    background-color: var(--white);
+}
+.Header-form-ourUs1{
+    color: var(--white);
+    font-family: 'HELEVETICAREGULAR';
+    font-size: 24px;
+}
+/*STYLES FOR HEADER FORM*/
+.Header-form{
+    margin-top: 50px;
+    display: flex;
+}
+.Header-form-box2{
+    display: flex;
+}
+.Header-form-legend{
+    color: var(--white);
+    margin-bottom: 40px;
+    font-family: 'HELEVETICALIGHT';
+    font-size: 24px;
+}
+.Header-form-input1{
+    font-size: 24px;
+    width: 305px;
+    border: 1px solid var(--white);
+    border-radius: 12px ;
+    padding: 20px 0 20px 15px;
+    margin-right: 35px;
+}
+.Header-form-input2{
+    font-size: 24px;
+    width: 305px;
+    border: 1px solid var(--white);
+    border-radius: 12px ;
+    padding: 20px 0 20px 15px;
+}
+.Header-form-button{
+    /*
+    position: relative;
+    right: 20px;
+    */
+    margin-left: -20px;
+    font-size: 24px;
+    color: var(--white);
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    border-radius: 12px ;
+    padding: 20px 15px 20px 15px;
+}
+
+/*STYLES FOR ABOUT US*/
+
+#AboutUs{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    /*---------------------------------------------------------------------About us MOBILE*/
+
+    .Aboutus-Header-headline3{
+        font-size: 0px;
+    }
+
+
+
+    /*------------------------------------------------------------------------------------*/
+.Aboutus-Header-headline1{
+    color: var(--orange);
+    margin-bottom: 0px;
+    font-size: 60px;
+    justify-content: center;
+    display: flex;
+    letter-spacing: 5px;
+    font-family: 'HELEVETICAHEAVY';
+    padding-top: 75px;
+    padding-bottom: 8px;
+}
+.MainWhyUs-photo{
+    width: 460px;
+    background-image: url(aboutUs.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Aboutus-Header-headline2{
+    margin: 25px 0px;
+    font-size: 40px;
+    justify-content: center;
+    display: flex;
+    line-height: 48px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: 'HELEVETICALIGHT';
+    color: var(--white);
+}
+.AboutUs-headliner{
+    margin: 90px 0px 30px 0px;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: "HELEVETICAHEAVY";
+    color: var(--orange);
+}
+.AboutUs-smallheadliner{
+    margin: 0px 0px 40px 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "HELEVETICABOLD";
+    color: var(--orange);
+}
+.AboutUs-line{
+    margin: 0px 0px 25px 0px;
+    background-color: var(--orange);
+    width: 55px;
+    height: 1px;
+}
+.AboutUs-info1{
+    margin: 0px 0px 32px 0px;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "HELEVETICABOLD";
+    color: var(--othertext1);
+}
+.AboutUs-info2{
+    margin: 0px 0px 15px 0px;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "HELEVETICABOLD";
+    color: var(--othertext1);
+}
+.AboutUs-info3{
+    margin: 0px;
+    font-size: 0px;
+    line-height: 0px;
+}
+.AboutUs-info4{
+    margin: 0px;
+    font-size: 0px;
+    line-height: 0px;
+}
+.AboutUs-more a{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "HELEVETICAHEAVY";
+    color: var(--orange);
+}
+.AboutUs-more a:hover{
+    color: var(--brown);
+}
+.AboutUs-video{
+    margin-top: 90px;
+    width: 570px;
+    height: 380px;
+}
+/* STYLES FOR OurTours*/
+
+#OurTours{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 85px;
+}
+.OurTours-headliner{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    color: var(--orange);
+    font-family: "HELEVETICAHEAVY";
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.OurTours-tours1 a:hover{
+    animation-name: wavesAnimation1;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+}
+.OurTours-tours2 a:hover{
+    animation-name: wavesAnimation2;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+}
+@keyframes wavesAnimation1 {
+    0%{
+        box-shadow: 0px 00px 15px 15px rgba(122,207,240,0.0);
+    }
+    50%{
+        box-shadow: 0px 00px 15px 15px rgba(122,207,240,0.8);
+    }
+    100%{
+        box-shadow: 0px 00px 15px 15px rgba(122,207,240,0.0);
+    }
+}
+@keyframes wavesAnimation2 {
+    0%{
+        box-shadow: 0px 00px 15px 15px rgba(255,190,29,0.0);
+    }
+    50%{
+        box-shadow: 0px 00px 15px 15px rgba(255,190,29,0.8);
+    }
+    100%{
+        box-shadow: 0px 00px 15px 15px rgba(255,190,29,0.0);
+    }
+}
+.OurTours-description{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "HELEVETICABOLD";
+    margin: 0px 0px 0px 0px;
+    color: var(--othertext1);
+    line-height: 0px;
+    font-size: 0px;
+}
+.OurTours-tours{
+    display: flex;
+    justify-content: space-between;
+}
+.OurTours-tours1{
+    display: flex;
+    justify-content: space-between;
+}
+.OurTours-tours2 {
+    display: flex;
+    justify-content: space-between;
+}
+.OurTours-kayaksalloys{
+    width: 0px;
+    height: 0px;
+    background-image: url(kayaksAlloys.jpg) ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.OurTours-authorstours{
+    width: 0px;
+    height: 0px;
+    background-image: url(authorsTours.jpg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.OurTours-tourname{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0px;
+    font-family: "HELEVETICABOLD";
+    margin: 0px 0px 0px 0px;
+    color: var(--white);
+    line-height: 0px;
+    font-size: 0px;
+}
+.OurTours-more{
+    display: flex;
+    justify-content: center;
+    font-family: "HELEVETICALIGHT";
+    font-size: 0px;
+    text-transform: uppercase;
+}
+/*---------------------------------------------------------------------------------------------------Our Tours Mobile*/
+.OurTours-tours-mob{
+    display: flex;
+    justify-content: space-between;
+}
+.OurTours-tours1-mob{
+    display: flex;
+    justify-content: space-between;
+}
+.OurTours-tours2-mob {
+    display: flex;
+    justify-content: space-between;
+}
+.OurTours-kayaksalloys-mob{
+    width: 580px;
+    height: 500px;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    background-image: url(kayaksAlloys.JPG) ;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.OurTours-authorstours-mob{
+    width: 580px;
+    height: 500px;
+    
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(authorsTours.jpeg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.OurTours-tourname-mob{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 48px;
+    font-family: "HELEVETICABOLD";
+    margin: 25px 0px 60px 0px;
+    color: var(--white);
+    line-height: 30px;
+    font-size: 30px;
+}
+.OurTours-more-mob{
+    display: flex;
+    justify-content: center;
+    font-family: "HELEVETICALIGHT";
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.OurTours-tours1-mob a:hover{
+    animation-name: wavesAnimation1;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+}
+.OurTours-tours2-mob a:hover{
+    animation-name: wavesAnimation2;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+.OurTours-more a:hover{
+    color: var(--orange);
+}
+
+/*STYLES FOR CHOOSE YOR TOUR*/
+
+#ChooseYourTour{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:  150px;
+    padding-top: 150px;
+}
+.ChooseYourTour-form{
+    background-color: var(--white);
+    width: 520px;
+    height: 420px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow:  5px 10px 80px 0px rgba(0,0,0,0.3);
+}
+.ChooseYourTour-input{
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--orange);
+    color: var(--lighttext);
+    background-color: aliceblue;
+    width: 395px;
+    font-size: 24px;
+    padding: 25px 0px 25px 35px;
+    margin: 20px 0px;
+}
+.ChooseYourTour-button{
+    padding: 20px 40px;
+    background-color: var(--orange);
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "HELEVETICAREGULAR";
+}
+.ChooseYourTour-buttonBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+.ChooseYourTour-headliner{
+    font-size: 36px;
+    color: var(--orange);
+    line-height: 48px;
+    font-family: "HELEVETICAHEAVY";
+    text-transform: uppercase;
+}
+.ChooseYourTour-smallheadliner{
+    font-size: 14px;
+    color: var(--orange);
+    line-height: 48px;
+    font-family: "HELEVETICABOLD";
+    text-transform: uppercase;
+}
+.ChooseYourTour-line{
+    height: 1px;
+    width: 55px;
+    margin: 25px 0px 20px 0px;
+    background-color: var(--orange);
+}
+.ChooseYourTour-description{
+    font-size: 16px;
+    color: var(--othertext1);
+    line-height: 30px;
+    font-family: "HELEVETICAREGULAR";
+}
+.ChooseYourTour-more a{
+    font-size: 14px;
+    color: var(--orange);
+    text-transform: uppercase;
+    line-height: 30px;
+    font-family: "HELEVETICAHEAVY";
+}
+.ChooseYourTour-more a:hover{
+    color: var(--brown);
+}
+
+/*STYLES FOR OUR PROS*/
+
+#OurPros{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.OurPros-headliner{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    color: var(--orange);
+    font-family: "HELEVETICAHEAVY";
+    text-transform: uppercase;
+    margin-bottom: 35px; 
+}
+.OurPros-container{
+    display: flex;
+    justify-content: space-between;
+}
+.OurPros-prosbox-imgbox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.OurPros-prosbox-img{
+    width: 80px;
+    fill: var(--orange);
+}
+.OurPros-prosbox-headliner{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: var(--orange);
+    font-family: "HELEVETICAHEAVY";
+    text-transform: uppercase;
+}
+.OurPros-prosbox-description{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--othertext1);
+    font-size: 18px;
+    font-family: "HELEVETICAREGULAR";
+    line-height: 20px;
+    letter-spacing: 24;
+
+
+}
+/*STYLES FOR EQUIPMENT BLOCK*/
+
+#Equipment{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 95px;
+}
+.Equipment-up{
+    margin-bottom: 50px;
+}
+.Equipment-up-headliner{
+    font-size: 36px;
+    font-family: 'HELEVETICAHEAVY';
+    color: var(--orange);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.Equipment-up-container{
+    display: flex;
+    justify-content: space-between;
+}
+.Equipment-up-description{
+    font-size: 14px;
+    font-family: 'HELEVETICABOLD';
+    color: var(--othertext1);
+}
+.Equipment-up-button a{
+    font-size: 14px;
+    font-family: 'HELEVETICABOLD';
+    color: var(--brown);
+    text-transform: uppercase;
+}
+.Equipment-up-button a:hover{
+    color: var(--orange);
+}
+.Equipment-menu{
+    display: flex;
+    justify-content: center;
+}
+.Equipment-menu-box{
+    width: 280px;
+    height: 485px;
+    background-color: var(--white);
+    margin: 0px 5px;
+    box-shadow: -1px -1px 25px 0px rgba(0,0,0,0.3);
+}
+.Equipment-menu-box-button {
+    margin: 45px 20px 20px 0px;
+}
+.Equipment-menu-box-button a{
+    background-color: var(--orange);
+    height: 20px;
+    padding: 10px 20px;
+    font-family: "HELEVETICABOLD";
+
+}
+#EquipmentBox-href {
+    opacity: 1;
+    position: relative;
+}
+#EquipmentBox-href:before {
+    content: 'Заказать';
+    position: absolute;
+    top: 30%;
+    left: 35%;
+
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+
+    border: solid 1px;
+    background-color: rgba(0, 0, 0, 0.5);;
+
+    transition: 0.2s;
+    transform: scaleX(0);
+}
+#EquipmentBox-href:hover {
+    opacity: 0.3;
+}
+#EquipmentBox-href:hover:before {
+    transform: scaleX(1);
+}
+
+.EquipmentBoxa-href {
+    opacity: 1;
+    position: relative;
+}
+.EquipmentBoxa-href:before {
+    content: 'Заказать';
+    position: absolute;
+    top: 30%;
+    left: 35%;
+
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+
+    border: solid 1px;
+    background-color: rgba(0, 0, 0, 0.5);;
+
+    transition: 0.2s;
+    transform: scaleX(0);
+}
+.EquipmentBoxa-href:hover {
+    opacity: 0.3;
+}
+.EquipmentBoxa-href:hover:before {
+    transform: scaleX(1);
+}
+
+.Equipment-menu-boxa{
+    width: 280px;
+    height: 485px;
+    box-shadow: 0px 0px 1px 0.01px var(--othertext1);
+    background-color: var(--white);
+    margin: 0px 5px;
+    box-shadow: -1px -1px 25px 0px rgba(0,0,0,0.3);
+
+
+    animation-name: opa;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
+.Equipment-menu-box-mobile{
+    width: 0px;
+    height: 0px;
+    box-shadow: 0px 0px 1px 0.01px var(--othertext1);
+    background-color: var(--white);
+    margin: 0px 0px;
+}
+.Equipment-menu-boxa-mobile{
+    width: 00px;
+    height: 0px;
+    box-shadow: 0px 0px 1px 0.01px var(--othertext1);
+    background-color: var(--white);
+    margin-right: 5px;
+
+    animation-name: opa1;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes opa {
+    0%{
+        margin-right: 5px;
+    }
+    100%{
+        margin-right: 10px;
+    }
+}
+@keyframes opa1 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes opa2 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.Equipment-menu-box-photo{
+    height: 260px;
+    width: 280px;
+}
+.Equipment-menu-box-photo img{
+    height: 100%;
+    width: 100%;
+}
+.Equipment-menu-box-description{
+    font-size: 14px;
+    font-family: 'HELEVETICABOLD';
+    color: var(--lighttext);
+    margin: 30px 45px 30px 21px;
+}
+.Equipment-menu-box-name{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'HELEVETICABOLD';
+    color: var(--othertext1);
+    margin-left: 21px;
+    margin-top: 21px;
+}
+.Equipment-menu-box-price{
+    font-size: 16px;
+    font-family: 'HELEVETICABOLD';
+    color: var(--othertext1);
+    margin-left: 21px;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+#Equipment-menu-prev{
+    width: 50px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+#Equipment-menu-next{
+    width: 50px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+#Equipment-menu-prev img{
+    width: 50px;
+    height: 30px;
+    transform: scale(-1, 1);
+}
+#Equipment-menu-next img{
+    width: 50px;
+    height: 30px;
+
+}
+.Equipment-menu-buttonbox1{
+    display: flex;
+    justify-content: center;
+    margin: 0px 5px;
+
+}
+.Equipment-menu-buttonbox2{
+    display: flex;
+    justify-content: center;
+    margin: 0px 5px;
+
+}
+.Equipment-menu-buttonbox1 button{
+    background-color: var(--orange);
+    border: none
+}
+.Equipment-menu-buttonbox1 button :hover{
+    background-color: var(--white);
+    border: solid 1px var(--orange)
+}
+.Equipment-menu-buttonbox2 button{
+    background-color: var(--orange);
+    border: none
+}
+.Equipment-menu-buttonbox2 button :hover{
+    background-color: var(--white);
+    border: solid 1px var(--orange)
+}
+/*STYLES FOR LASTFORM*/
+
+#LastForm{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 95px;
+    margin-bottom: 105px;
+}
+.LastForm-up-headliner{
+    display: flex;
+    justify-content: center;
+
+    font-size: 48px;
+    color: var(--orange);
+    font-family: 'HELEVETICAHEAVY';
+
+}
+.LastForm-up-description{
+    display: flex;
+    justify-content: center;
+
+    font-size: 24px;
+    color: var(--maintext);
+    font-family: 'HELEVETICALIGHT';
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.LastForm-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.LastForm-down-form{
+    display: flex;
+    width: 960px;
+    height: 80px;
+
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 1px rgba(205, 214, 219, 0.9);
+}
+.LastForm-down-form-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.LastForm-down-form-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+}
+.LastForm-down-form-input input{
+    border: 1px solid var(--orange);
+    padding: 18px 20px 18px 30px;
+}
+.LastForm-down-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.LastForm-down-button button{
+    margin-left: -30px;
+    font-size: 24px;
+    width: 170px;
+    height: 80px;
+    color: var(--white);
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    border-radius: 15px ;
+    padding: 20px 15px 20px 15px;
+}
+
+/*Styles FOR FOOTER*/
+
+#Footer{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 0px 20px 1px rgba(205, 214, 219, 0.9);
+    padding-bottom: 40px;
+    background-color: var(--white);
+
+}
+.Footer-mobile-firstblock-logo img{
+    height: 40px;
+}
+.Footer-mobile-firstblock-numbers{
+    display: flex;
+    flex-direction: column;
+}
+.Footer-mobile-secondblock{
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+}
+.Footer-mobile-thirdblock{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.Footer-mobile-thirdblock-insta{
+    background-color: #49c7a5;
+    width: 50px;
+    height: 50px;
+    margin: 0px 4px;
+    border-radius: 100px;
+}
+.Footer-mobile-thirdblock-facebook{
+    background-color: #496dc7;
+    width: 50px;
+    height: 50px;
+    margin: 0px 4px;
+    border-radius: 100px;
+}
+.Footer-mobile-thirdblock-telegram{
+    background-color: #aec749;
+    width: 50px;
+    height: 50px;
+    margin: 0px 4px;
+    border-radius: 100px;
+}
+
+/*---------------------------------------------------------Footer mobile*/
+.Footer-mobile-firstblock-logo img{
+    height: 0px;
+}
+.Footer-mobile-secondblock{
+    margin: 0px 0px;
+}
+.Footer-mobile-thirdblock{
+    margin: 0px;
+}
+.Footer-mobile-thirdblock-insta{
+    width: 0px;
+    height: 0px;
+    margin: 0px 0px;
+    border-radius: 0px;
+}
+.Footer-mobile-thirdblock-facebook{
+    width: 0px;
+    height: 0px;
+    margin: 0px 0px;
+    border-radius: 0px;
+}
+.Footer-mobile-thirdblock-telegram{
+    width: 0px;
+    height: 0px;
+    margin: 0px 0px;
+    border-radius: 0px;
+}
+.Footer-mobile-thirdblock-insta img{
+    width: 0px;
+    margin: 0px;
+}
+.Footer-mobile-thirdblock-facebook img{
+    width: 0px;
+    margin: 0px 0px;
+}
+.Footer-mobile-thirdblock-telegram img{
+    width: 0px;
+    margin: 0px 0px;
+}
+.Footer-mobile-fourthblock-href {
+    margin-top: 0px;
+}
+.Footer-mobile-fourthblock-href a{
+    color: var(--maintext);
+    font-size: 0px;
+}
+.Footer-mobile-secondblock {
+    margin: 0px 0px;
+    font-size: 0px;
+}
+.Footer-mobile-firstblock-numbers{
+    font-size: 0px;
+}
+/*-----------------------------------------------------------------------*/
+
+
+.Footer-firstcolumn-logo img{
+    height: 45px;
+}
+.Footer-secondcolumn{
+    display: flex;
+    justify-content: space-around;
+
+}
+.Footer-firstcolumn-text{
+    padding: 20px
+}
+.Footer-firstcolumn{
+    margin-top: 40px;
+}
+.Footer-secondcolumn-1-headliner{
+    font-size: 18px;
+    color: var(--maintext);
+    font-family: 'HELEVETICABOLD';
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+.Footer-firstcolumn-social{
+    display: flex;
+}
+.Footer-secondcolumn-1-paragraph{
+    font-size: 16px;
+    font-family: 'HELEVETICAREGULAR';
+    margin-bottom: 5px;
+}
+.Footer-secondcolumn-1-paragraph a{
+    color: var(--maintext);
+}
+.Footer-secondcolumn-1-paragraph a:hover{
+    color: var(--brown);
+}
+.Footer-map{
+    margin-top: 0px;
+    width: 500px;
+    height: 300px;
+}
+
+
+
+
+/*<==========================================STYLES FOR KAYAKALLOYS PAGE===========================================>*/
+
+.KayakAlloysSide-filter{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 5px 0.01px rgba(205, 214, 219, 0.9);
+    padding: 25px;
+    margin-bottom: 50px;
+    background-color:var(--white);
+}
+.buttonHover :hover{
+    box-shadow: 5px 10px 40px 0px rgba(0,0,0,0.3);  
+}
+.KayakAlloysSide-filter-button a{
+    color: var(--maintext);
+}
+.KayakAlloysSide-filter-button :hover{
+    color: var(--blue);
+}
+.KayakAlloysSide-headliner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.KayakAlloysSide-headliner-title{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: 'HELEVETICAHEAVY';
+    color: var(--blue);
+}
+.KayakAlloysSide-headliner-data{
+    font-size: 16px;
+    margin: auto 0;
+    font-family: 'HELEVETICAREGULAR';
+    color: var(--lighttext);
+}
+.KayakAlloysSide-line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--lighttext);
+    margin: 20px 0px;
+}
+#TourBox{
+    display: flex;
+    flex-direction: column;
+}
+.TourBox-box{
+    display: flex;
+}
+.TourBox-img{
+    height: 330px;
+    width: 305px;
+    border-radius: 25px;
+}
+.TourBox-container{
+    width: 100%;
+    padding: 25px 0px 0px 30px;
+}
+.TourBox-rightside-healiner{
+    font-size: 20px;
+    font-family: 'HELEVETICAHEAVY';
+    color: var(--blue);
+    margin-bottom: 40px;
+}
+.TourBox-rightside-description{
+    font-size: 18px;
+    font-family: 'HELEVETICAREGULAR';
+    color: var(--othertext1);
+    margin-bottom: 70px;
+}
+.TourBox-rightside-data{
+    display: flex;
+    justify-content: space-between;
+}
+.TourBox-button{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'HELEVETICAHEAVY';
+    color: var(--white);
+
+    background-color: var(--blue);
+    border: none;
+    padding: 18px 13px;
+}
+.Content-buttonscontainer{
+    display: flex;
+}
+.Content-buttonscontainer-button{
+    border: none;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 20px;
+    padding: 15px 40px;
+    margin-top: -40px;
+    margin-right: 5px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#AuthorsAlloysSide{
+    display: flex;
+    flex-direction: column;
+}
+.AuthorsAlloysSide-headliner{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-family: 'HELEVETICABOLD';
+    color: var(--blue);
+    margin-bottom: 50px;
+}
+.AuthorsAlloysSide-container{
+    display: flex;
+    justify-content: space-between;
+}
+.AuthorsAlloysSide-end{
+    display: flex;
+    justify-content: center;
+}
+.AuthorsAlloysSide-form{
+    width: 530px;
+    height: 350px;
+    box-shadow: 5px 10px 80px 0px rgba(0,0,0,0.3);
+}
+.form-group{
+    display: flex;
+    justify-content: center;
+}
+.AuthorsAlloysSide-form-input1{
+    width: 400px;
+    font-size: 24px;
+    border: solid 1px var(--gray);
+    padding: 25px 30px;
+    margin-top: 50px;
+    background-color: aliceblue;
+}
+.AuthorsAlloysSide-form-input2{
+    width: 400px;
+    font-size: 24px;
+    border: solid 1px var(--gray);
+    padding: 25px 30px;
+    margin-top: 20px;
+    background-color: aliceblue;
+}
+.AuthorsAlloysSide-form-button-box{
+    display: flex;
+    justify-content: center;
+}
+.AuthorsAlloysSide-form-button{
+    display: flex;
+    justify-content: center;
+    border: none;
+    font-size: 24px;
+    margin-top: 32px;    
+    padding: 15px 30px;
+    color: var(--white);
+    background-color: var(--blue);
+    background-image: url(flight.svg);
+}
+.AuthorsAlloysSide-container-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+}
+.AuthorsAlloysSide-end{
+    display: flex;
+    justify-content: start;
+    font-size: 20px;
+    margin: 40px 0px 70px 0px;
+}
+.AuthorsAlloysSide-end a{
+    color: var(--maintext);
+}
+.AuthorsAlloysSide-end b{
+    color: var(--blue);
+}
+
+
+.WeekendTours-headliner-title{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+    font-size: 36px;
+    font-family: 'HELEVETICABOLD';
+    color: var(--blue);
+}
+
+
+
+/*STYLES FOR EQUIPMENT PAGE*/
+
+/*-------------------------------------------------------------Equipment mobile*/
+    
+    
+    
+.Equipment-up-headlinermobile{
+    font-size: 0px;
+    margin-bottom: 0px;
+}
+.Equipment-menu-box-mobile{
+    width: 0px;
+    height: 0px;
+    box-shadow: 0px 0px 0px 0.00px var(--othertext1);
+    background-color: var(--white);
+    margin: 0px 0px;
+}
+.Equipment-menu-boxa-mobile{
+    width: 0px;
+    height: 0px;
+    box-shadow: 0px 0px 0px 0px var(--othertext1);
+    background-color: var(--white);
+    margin: 0px 0px;
+
+    animation-name: opa;
+    animation-duration: 0.0s;
+    animation-iteration-count: 0;
+}
+
+.Equipment-menu-box-name-mobile{
+    display: flex;
+    justify-content: center;
+
+    font-size: 0px;
+    font-family: "HELEVETICALIGHT";
+    color: var(--maintext);
+    margin-bottom: 0px;
+}
+.Equipment-menu-box-mobile{
+    display: flex;
+    justify-content: space-around;
+    width: 0px;
+    height: 0px;
+    border-radius: 0px;
+}
+.Equipment-menu-box-photo-mobile{
+    visibility: hidden;
+
+    width: 0px;
+    height: 0px;
+    border-radius: 0px;
+}
+.Equipment-menu-box-photo-mobile img{
+    visibility: hidden;
+
+    padding: 0px;
+    width: 0%;
+    height: 0%;
+    border-radius: 0px;
+}
+.Equipment-menu-box-button-mobile a{
+    background-color: none;
+    visibility: hidden;
+    border-radius: 0px;
+    padding: 0px;
+}
+.Equipment-menu-box-price-mobile{
+    padding: 0px 0px 0px 0px;
+    font-size: 0px;
+    line-height: 0px;
+} 
+.EquipmentMobile-buttons{
+    display: flex;
+    justify-content: center;
+}
+.EquipmentMobile-buttons-prev button{
+    width: 0px;
+    height: 0px;
+    border-radius: 0px;
+    border: 0px solid var(--maintext);
+    background-color: var(--orange);
+    background-image: url(arrowBlack.svg);
+    background-size: 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(-0, 0);
+    margin-right: 0px;
+
+}
+.EquipmentMobile-buttons-next button{
+    width: 0px;
+    height: 0px;
+    border-radius: 0px;
+    border: 0px solid var(--maintext);
+    background-color: var(--orange);
+    background-image: url(arrowBlack.svg);
+    background-size: 0%;
+    background-position: center;
+    visibility: hidden;
+    background-repeat: no-repeat;
+    margin-right: 0px;
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+#EquipmentBox{
+    height: 125px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: start;
+    box-shadow: 0px 0px 5px 0.01px rgba(205, 214, 219, 0.9);
+    border-radius: 25px;
+    padding: 0px 12px;
+    margin: 55px 0;
+}
+.EquipmentBox-picture img{
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.EquipmentBox-picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.EquipmentBox-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "HELEVETICABOLD";
+    color: var(--blackOrange);
+}
+.EquipmentBox-price{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 22px;
+    line-height: 30px;
+    font-family: "HELEVETICAREGULAR";
+    color: var(--maintext);
+}
+
+.EquipmentBox-button{
+    border: none;
+    color: var(--white);
+    background-color: var(--blackOrange);
+    font-size: 22px;
+    font-family: "HELEVETICABOLD";
+    padding: 20px 25px;
+    border-radius: 20px;
+}
+
+.Equipment-filter{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 5px 0.01px rgba(205, 214, 219, 0.9);
+    padding: 25px;
+    margin-bottom: 50px;
+    background-color:var(--white);
+}
+
+.Equipment-filter-button a{
+    color: var(--maintext);
+}
+.Equipment-filter-button :hover{
+    color: var(--blackOrange);
+}
+
+/*STYLES FOR ABOUT US PAGE*/
+
+#MainWhyUs{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+    padding-bottom: 120px;    
+}
+.MainWhyUs-desc-title{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-family: "HELEVETICAHEAVY";
+    margin-bottom: 60px;
+}
+
+.MainWhyUs-desc-desc{
+    font: 16px;
+    color: var(--maintext);
+    font-family: "HELEVETICAREGULAR";
+}
+
+.MainWhyUs-desc-desc-block{
+    font: 16px;
+    line-height: 30px;
+    color: var(--maintext);
+    font-family: "HELEVETICAREGULAR";
+    margin-bottom: 42px;
+}
+
+#Reviews{
+    width: 100%;
+    padding: 150px 0px;
+}
+/*---------------------------------------------------------------------------Reviews Mobile*/
+#ReviewsMobile {
+    width: 0%;
+    padding: 0px 0px;
+}
+.ReviewsMobile-upside-title {
+    font-size: 0px;
+}
+.ReviewsMobile-upside-desc {
+    font-size: 0px;
+    text-align: center;
+    color: var(--maintext);
+    font-family: "HELEVETICALIGHT";
+    margin-bottom: 0px;
+}
+#RewiewsBoxMobile {
+    height: 0px;
+    width: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+.RewiewsBoxMobile-stars {
+    height: 0px;
+    width: 0px;
+    top: 0px;
+    left: 0px;
+}
+.RewiewsBoxMobile-name {
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 0px;
+}
+.RewiewsBoxMobile-desc {
+    text-align: center;
+    padding: 0px;
+    font-size: 0px;
+    line-height: 0px;
+}
+
+
+
+
+/*---------------------------------------------------------------------------Reviews Mobile*/
+
+#OurSocialMedia{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 82px;
+}
+.OurSocialMedia-leftside-title{
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-family: "HELEVETICAHEAVY";
+    margin-bottom: 60px;
+}
+.OurSocialMedia-leftside-desc{
+    font-size: 18px;
+    color: var(--maintext);
+    font-family: "HELEVETICABOLD";
+    margin-bottom: 60px;
+    line-height: 30px;
+
+}
+.OurSocialMedia-righside{
+    height: 630px;
+}
+.OurSocialMedia-leftside-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+.Smartphone-Area1{
+    width: 320px;
+    height: 630px;
+    border-radius: 30px;
+    background-color: var(--telephoneColor);
+    box-shadow: 5px 10px 80px 0px rgba(0,0,0,0.3);
+}
+.Smartphone-Area2{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 630px;
+    border-radius: 30px;
+    background-color: var(--telephoneColor);
+    box-shadow: inset 15px 10px 20px 0px rgba(255,255,255,1);
+
+}
+.Smartphone-camera-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.Smartphone-speaker-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    margin-bottom: 18px;
+}
+.Smartphone-lines1-box{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -18px;
+    margin-top: 16px;
+}
+.Smartphone-lines2-box{
+    display: flex;
+    justify-content: center;
+    margin-top: -18px;
+}
+.Smartphone-button-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.Smartphone-camera{
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: var(--telephoneDark);
+}
+.Smartphone-speaker{
+    width: 70px;
+    height: 7px;
+    border-radius: 100px;
+    background-color: var(--telephoneDark);
+}
+.Smartphone-lines1{
+    width: 320px;
+    height: 5px;
+    background-color: var(--telephoneColorLight);
+}
+.Smartphone-lines2{
+    width: 320px;
+    height: 5px;
+    background-color: var(--telephoneColorLight);
+}
+.Smartphone-button{
+    border: 2px solid var(--telephoneDark);
+    border-radius: 100px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--telephoneColorLight);
+}
+.Smartphone-videoBox{
+    display: flex;
+    justify-content: center;
+    bottom: 560px;
+    left: 29px;
+}
+.OurSocialMedia-leftside-title img{
+    height: 62px;
+    transform: rotate(-125deg);
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+}
+.OurSocialMedia-leftside-container-box{
+    height: 155px;
+    width: 155px;
+    border-radius: 50px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 10px 80px 0px rgba(0,0,0,0.3);
+
+}
+.OurSocialMedia-leftside-container-box img{
+    height: 90px;
+    margin: auto 0px;
+}
+#RewiewsBox{
+    display: flex;
+    flex-direction: column;
+
+    height: 275px;
+    width: 460px;
+    background-color: var(--white);
+    border-radius: 25px;
+    box-shadow: 5px 10px 80px 0px rgba(0,0,0,0.3);
+
+}
+.Reviews-more{
+    margin-top: 50px;
+    font-size: 24px;
+    font-family: 'HELEVETICAHEAVY';
+    display: flex;
+    justify-content: center;
+}
+.Reviews-more a{
+    font-size: 24px;
+    color: var(--orange);
+}
+.Reviews-more a:hover{
+    color: var(--blackOrange);
+}
+.RewiewsBox-desc{
+    padding: 10px;
+    font-size: 15px;
+    color: var(--maintext);
+    line-height: 21px;
+    font-family: "HELEVETICAREGULAR";
+}
+.RewiewsBox-stars{
+    margin-top: -10px;
+    margin-left: 340px;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 100px;
+    background-image: url(star.svg);
+}
+.RewiewsBox-name{
+    margin-top: 5px;
+    margin-left: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-family: "HELEVETICABOLD";
+}
+
+.Reviews-main{
+    display: flex;
+    justify-content: space-between;
+}
+.Reviews-upside-title{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-family: "HELEVETICAHEAVY";
+    margin-bottom: 20px;
+}
+.Reviews-upside-desc{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--maintext);
+    font-family: "HELEVETICABOLD";
+    margin-bottom: 80px;
+
+}
+
+.Reviews-main-next img{
+    height: 20px;
+}
+.Reviews-main-prev img{
+    height: 20px;
+    transform: scale(-1, 1);
+}
+.Reviews-main-next a{
+    margin: auto 0px;
+}
+.Reviews-main-prev a{
+    margin: auto 0px;
+}
+.Reviews-main-next{
+    display: flex;
+}
+.Reviews-main-prev{
+    display: flex;
+}
+
+/*STYLES FOR KAYAKASALLOYS REGISTER PAGE*/
+
+
+#kayakAlloysReg{
+    display: flex;
+    flex-direction: column;
+}
+.kayakAlloysReg-title{
+    display: flex;
+    flex-direction: column; 
+}
+.kayakAlloysReg-title-title{
+    display: flex;
+    justify-content: center;
+
+    font-size: 36px;
+    color: var(--blue);
+    font-family: 'HELEVETICABOLD';
+    margin-top: 20px;
+}
+.kayakAlloysReg-title-desc{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+.kayakAlloysReg-container{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+
+}
+.kayakAlloysReg-container-leftcolumn{
+    display: flex;
+    flex-direction: column; 
+}
+.kayakAlloysReg-leftcolumn-textbox1{
+    font-size: 16px;
+    margin-bottom: 50px;
+    height: 242px;
+    line-height: 30px;
+    font-family: "HELEVETICABOLD";
+
+}
+.kayakAlloysReg-leftcolumn-textbox{
+    font-size: 16px;
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+.kayakAlloysReg-leftcolumn-textbox-title{
+    font-size: 18px;
+    color: var(--blue);
+    font-family: 'HELEVETICABOLD';
+}
+.kayakAlloysReg-rightcolumn-picture{
+    width: 450px;
+    height: 242px;
+    margin-bottom: 50px;
+    background-image: url(kayaksBG.JPG);
+    background-size: 100%;
+}
+
+
+/*
+<--------------------------------------------------------ANIMATION----------------------------------------------------------------------->
+*/
+.animateForPlane{
+    animation: 3s ease forwards draw;
+    opacity: 0;
+}
+.animateHiddenText{
+    animation: 3s ease forwards oldText;
+    opacity: 0;
+}
+.animateVisibleText{
+    animation: 3s ease forwards newText;
+    opacity: 0;
+}
+@keyframes draw {
+    0%{
+        position: relative;
+        left: 0px;
+        opacity: 1;
+
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        left: 640px;
+    }
+}
+@keyframes newText {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes oldText {
+    0%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+<--------------------------------------------------------ADAPTATION----------------------------------------------------------------------->
+
+*/
 

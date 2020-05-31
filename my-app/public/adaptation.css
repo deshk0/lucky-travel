@@ -1,0 +1,1360 @@
+@media(max-width: 756px){
+    .Wrapper{
+        max-width: 756px
+    }
+    #GoogleMap{
+        margin-Top:0px;
+        width: 0px; 
+        height: 0px;
+    }
+
+    .GoToMobile{
+        margin-top: 130px;
+        margin-bottom: 830px;
+
+        display: flex;
+        justify-content: center;
+        color: var(--orange);
+        text-align: center;
+        width: 100%;
+        height: 100px;
+        font-size: 24px;
+        visibility: visible;
+    }
+    .GoToMobile a{
+        margin: auto;
+        padding: 20px 0px;
+        color: var(--orange);
+        font-size: 24px;
+        visibility: visible;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    .Blocks {
+        width: inherit;
+        display: flex;
+        justify-content: center;
+    }
+    #Navbar {
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--white);
+        position: sticky;
+        top: 0;
+        box-shadow: 0px 0px 3px 0.001px var(--othertext1);
+        font-family: 'HELEVETICALIGHT';
+    }
+    .NavbarMobile-burgerMenu{
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        margin-top: 7px;
+    }
+    .burgerMenu-button{
+        width: 35px;
+        height: 35px;
+        background-color: var(--othertext1);
+        border-radius: 50%;
+        position: relative;
+    }
+    .burgerMenu-button-span,
+    .burgerMenu-button-span::before,
+    .burgerMenu-button-span::after {
+        position: absolute;
+        top: 50%; margin-top: -1px;
+        left: 50%; margin-left: -8px;
+        width: 15px;
+        height: 2px;
+        background-color: var(--white);
+    }
+    .burgerMenu-button-span::before,
+    .burgerMenu-button-span::after{
+        content: '';
+        display: block;
+        transition: 1s;
+    }
+    .burgerMenu-button-span::before{
+        transform: translateY(-5px);
+        margin-left: -7px;
+    }
+    .burgerMenu-button-span::after{
+        transform: translateY(5px);
+        margin-left: -7px;
+    }
+    
+    .burgerMenu-button_active span{
+        transform: rotate(-90deg);
+    }
+    .burgerMenu-button_active span:before{
+        transform: rotate(35deg);
+        width: 10px;
+        transform-origin: left bottom;
+    }
+    .burgerMenu-button_active span:after{
+        transform: rotate(-35deg);
+        width: 10px;
+        transform-origin: left top;
+    
+    }
+    .NavbarMobile-burgerMenu-block{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    
+        transition: 0.5s;
+        transition-delay: 0.5s;
+        transform-origin: top;
+    
+    
+        height: 0vh;
+        width: 10%;
+    }
+    .NavbarMobile-burgerMenu-block_active{
+        transition: 0.5s;
+        height: 100vh;
+        width: 100%;
+        transform-origin: top;
+        opacity: 1;
+    }
+    
+    .NavbarMobile-burgermenu-link{
+        margin: 6px 0px;
+        font-family: "HELEVETICABOLD";
+        color: var(--maintext);
+    
+        transition: 0.2s;
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    .NavbarMobile-burgermenu-link_active{
+        margin: 6px 0px;
+        margin-left: 15px;
+
+        font-family: "HELEVETICABOLD";
+        color: var(--maintext);
+    
+        transition-delay: 0.2s;
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    .Navbar-logo{
+        margin: 0px;
+    }
+    .Navbar-socialmedia{
+        margin: 0px;
+        height: 0px;
+        width: 0px;
+    }
+    .Navbar-pages-box{
+        font-size: 0px;
+    }
+    .Navbar-socialmedia-box{
+        height: 0px;
+        width: 0px;
+    }
+    .Navbar-socialmedia-img{
+        width: 0px;
+    }
+    .Navbar-pages{
+        width: 0px;
+        margin: 0px;
+    }
+    .Navbar-contacts{
+        font-size: 0px;
+        margin: 0px;
+        height: 0px;
+        width: 0px;
+    }
+    .Navbar-email{
+        font-size: 0px;
+    }
+    #Header{
+        height: 200px;
+        background-image: url(HeaderBackgroundMOBILE.jpg);
+        background-size: 100%;
+        background-position-y: 104%;
+    }
+    .Header-headline1{
+        padding-top: 0px;
+        font-size: 24px;
+    }
+    .Header-headline2{
+        font-size: 0px;
+        line-height: 0px;
+    }
+    .Header-headline3{
+        font-size: 14px;
+    }
+    .Header-headlinebox{
+        display: flex;
+        justify-content: center;
+    }
+    .Header-line{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 0px;
+        height: 0px;
+        background-color: none;
+    }
+    .Header-form-ourUs{
+        font-size: 0px;
+        margin: 0px;
+    }
+    .Header-form-ourUs1{
+        font-size: 0px;
+        margin: 0px;
+    }
+    .Header-form {
+        margin-top: 0px;
+    }
+    .Header-form-input1 {
+        font-size: 0px;
+        width: 0px;
+        border: 0px solid var(--white);
+        padding: 0px;
+        margin-right: 0px;
+    }
+    .Header-form-input2 {
+        font-size: 0px;
+        width: 0px;
+        border: 0px solid var(--white);
+        padding: 0px;
+        margin-right: 0px;
+    }
+    .Header-form-button {
+        margin-left: 0px;
+        font-size: 0px;
+        color: var(--white);
+        border: 0px solid var(--orange);
+        padding: 0px;
+    }
+    #AboutUs {
+        width: 320px;
+        flex-direction: column;
+    }
+
+    .AboutUs-headliner {
+        margin: 20px 0px 20px 0px;
+        font-size: 24px;
+        text-transform: uppercase;
+        font-family: "HELEVETICAHEAVY";
+        color: var(--orange);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .AboutUs-smallheadliner {
+        margin: 0px 0px 20px 0px;
+        font-size: 16px;
+        text-transform: unset;
+        font-family: "HELEVETICALIGHT";
+        text-align: center;
+        color: var(--maintext)
+    }
+    .AboutUs-line {
+        text-align: center;
+        margin: 0px auto;
+        margin-bottom: 20px;
+        display: flex;
+    }
+    .AboutUs-info1{
+        margin: 0px;
+        font-size: 0px;
+        line-height: 0px;
+    }
+    .AboutUs-info2{
+        margin: 0px;
+        font-size: 0px;
+        line-height: 0px;
+    }
+    .AboutUs-info3 {
+        margin: 0px 0px 32px 0px;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: "HELEVETICALIGHT";
+        text-align: center;
+    }
+    .AboutUs-info4{
+        margin: 0px 0px 20px 0px;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: "HELEVETICALIGHT";
+        text-align: center;
+    }
+    .AboutUs-more {
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        text-transform: unset;
+        font-family: "HELEVETICALIGHT";
+        color: var(--orange);
+    }
+    .AboutUs-more a{
+        font-size: 14px;
+        text-transform: unset;
+        font-family: "HELEVETICALIGHT";
+        color: var(--orange);
+    }
+    .AboutUs-video {
+        margin-top: 0px;
+        width: 0px;
+        height: 0px;
+    }
+    .mobile-form-group{
+        display: flex;
+        justify-content: center;
+    }
+    .mobileformbox{
+        width: 320px;
+        background-color: white;
+        padding: 20px 0px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+        margin-top: 20px;
+    }
+    .mobile-form-buttonBox{
+
+        display: flex;
+        justify-content: center;
+        margin-top: 13px;
+
+    }
+    .mobile-form-button{
+        font-size: 16px;
+        visibility: visible;
+        border: none;
+        border-radius: 50px;
+        background-color: var(--orange);
+        color: var(--white);
+        padding: 15px 30px;
+    }
+    .mobile-form-input{
+        font-size: 16px;
+        padding: 12px 0px;
+        width: 265px;
+        background-color: aliceblue;
+        border: 1px solid var(--orange);
+        border-radius: 15px;
+        margin-top: 13px;
+        visibility: visible;
+    }
+    input{
+        display: block;
+        text-align: center;
+    }
+    #OurTours {
+        width: 320px;
+
+    }
+    .OurTours-tours-mob{
+        display: flex;
+        justify-content: space-between;
+    }
+    .OurTours-tours1-mob{
+        display: flex;
+        justify-content: space-between;
+    }
+    .OurTours-tours2-mob {
+        display: flex;
+        justify-content: space-between;
+    }
+    .OurTours-kayaksalloys-mob{
+        width: 0px;
+        height: 0px;
+        background-image: url(kayaksAlloys.png) ;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    .OurTours-authorstours-mob{
+        width: 0px;
+        height: 0px;
+        background-image: url(authorsTours.png);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .OurTours-tourname-mob{
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 0px;
+        font-family: "HELEVETICABOLD";
+        margin: 0px 0px 0px 0px;
+        color: var(--white);
+        line-height: 0px;
+        font-size: 0px;
+    }
+    .OurTours-more-mob{
+        display: flex;
+        justify-content: center;
+        font-family: "HELEVETICALIGHT";
+        font-size: 0px;
+        text-transform: uppercase;
+    }
+    .OurTours-headliner {
+        font-size: 24px;
+    }
+    .OurTours-description {
+        font-family: "HELEVETICALIGHT";
+        margin: 15px 0px 30px 0px;
+        line-height: 18px;
+        font-size: 15px;
+    }
+    .OurTours-tours {
+        flex-direction: column;
+    }
+    .OurTours-tours1 {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .OurTours-tours2 {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .OurTours-kayaksalloys {
+        width: 300px;
+        height: 192px;
+        background-blend-mode: multiply;
+        background-color: rgba(0,0,0,0.3);
+        background-image: url(kayaksAlloys.JPG);
+        background-repeat: no-repeat;
+        border-radius: 25px;
+        background-size: 130%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .OurTours-authorstours {
+        width: 300px;
+        height: 192px;
+        background-blend-mode: multiply;
+        background-color: rgba(0,0,0,0.3);
+        background-image: url(authorsTours.jpeg);
+        border-radius: 25px;
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .OurTours-tourname {
+        text-align: center;
+        line-height: 30px;
+        font-family: "HELEVETICAHEAVY";
+        margin: 25px 0px 10px 0px;
+        color: var(--white);
+        font-size: 24px;
+    }
+    .OurTours-more {
+        font-family: "HELEVETICALIGHT";
+        font-size: 18px;
+        text-transform: unset;
+    }
+    #ChooseYourTour {
+        margin-bottom: 0px;
+        padding-top: 0px;
+        justify-content: start;
+    }
+    .ChooseYourTour-form {
+        width: 0px;
+        height: 0px;
+    }
+    .ChooseYourTour-input {
+        border: none;
+        width: 0px;
+        font-size: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .ChooseYourTour-button {
+        padding: 0px;
+        border: none;
+        font-size: 0px;
+    }
+    .ChooseYourTour-headliner {
+        font-size: 0px;
+        line-height: 0px;
+    }
+    .ChooseYourTour-smallheadliner {
+        font-size: 0px;
+        line-height: 0px;
+    }
+    .ChooseYourTour-line {
+        height: 0px;
+        width: 0px;
+        margin: 0px;
+    }
+    .ChooseYourTour-description {
+        font-size: 0px;
+        line-height: 0px;
+    }
+    .ChooseYourTour-more a {
+        font-size: 0px;
+        line-height: 0px;
+    }
+    #OurPros {
+        width: 320px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .OurPros-headliner {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    .OurPros-container {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .OurPros-prosbox-description {
+        font-size: 15px;
+        line-height: 16px;
+        letter-spacing: 20;
+        margin-bottom: 25px;
+
+    }
+    .OurPros-prosbox-headliner {
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+    .OurPros-prosbox-img {
+        height: 70px;
+        width: 70px;
+    }
+    .OurPros-prosbox-imgbox {
+        margin-bottom: 15px;
+    }
+    #Equipment {
+        margin-top: 45px;
+        width: 320px;
+    }
+    .Equipment-up{
+        margin-bottom: 0px;
+    }
+
+    .Equipment-up-headliner {
+        font-size: 0px;
+        margin-bottom: 0px;
+    }
+    .Equipment-up-container {
+        display: flex;
+        justify-content: center;
+    }
+    .Equipment-up-description {
+        font-family: 'HELEVETICAREGULAR';
+        display: flex;
+        justify-content: center;
+    }
+    .Equipment-up-button a {
+        font-size: 0px;
+    }
+    #Equipment-menu-prev {
+        width: 0px;
+        height: 0px;
+        padding: 0;
+    }
+    #Equipment-menu-next {
+        width: 0px;
+        height: 0px;
+        padding: 0;
+    }
+    .Equipment-menu-box {
+        width: 0px;
+        height: 0px;
+        margin: 0px;
+    }
+    .Equipment-menu-boxa {
+        width: 0px;
+        height: 0px;
+        margin: 0px;
+    }
+    #Equipment-menu-next img {
+        width: 0px;
+        height: 0px;
+    }
+    #Equipment-menu-prev img {
+        width: 0px;
+        height: 0px;
+    }
+    .Equipment-menu-box-photo{
+        height: 0px;
+        width: 0px;
+    }
+    .Equipment-menu-box-photo img{
+        height: 0%;
+        width: 0%;
+    }
+    .Equipment-menu-box-name {
+        font-size: 0px;
+        line-height: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .Equipment-menu-box-description {
+        font-size: 0px;
+        margin: 0px;
+    }
+    .Equipment-menu-box-price {
+        font-size: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .Equipment-menu-box-mobile{
+        width: 100px;
+        height: 100px;
+        box-shadow: 0px 0px 1px 0.01px var(--othertext1);
+        background-color: var(--white);
+        margin: 0px 0px;
+    }
+    .Equipment-menu-boxa-mobile{
+        width: 100px;
+        height: 100px;
+        box-shadow: 0px 0px 1px 0.01px var(--othertext1);
+        background-color: var(--white);
+        margin: 0px 0px;
+    
+        animation-name: opa;
+        animation-duration: 0.2s;
+        animation-iteration-count: 1;
+    }
+    #EquipmentMobile{
+        display: flex;
+        flex-direction: column;
+    }
+    .Equipment-menu-box-name-mobile{
+        display: flex;
+        justify-content: center;
+
+        font-size: 18px;
+        font-family: "HELEVETICALIGHT";
+        color: var(--maintext);
+        margin-bottom: 16px;
+    }
+    .Equipment-menu-box-mobile{
+        display: flex;
+        justify-content: space-around;
+        width: 310px;
+        height: 150px;
+        border-radius: 25px;
+    }
+    .Equipment-menu-box-photo-mobile{
+        visibility: visible;
+
+        width: 145px;
+        height: 130px;
+        border-radius: 25px;
+    }
+    .Equipment-up-headlinermobile{
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-family: "HELEVETICAHEAVY";
+        color: var(--orange);
+    }
+    .Equipment-menu-box-photo-mobile img{
+        visibility: visible;
+        padding: 9px 0px;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+    }
+    .Equipment-menu-box-conrainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .Equipment-menu-box-button-mobile a{
+        visibility: visible;
+        background-color: var(--orange);
+        border-radius: 15px;
+        padding: 20px;
+    }
+    .Equipment-menu-box-price-mobile{
+        padding: 30px 0px 30px 20px;
+        font-size: 14px;
+        line-height: 20px;
+    } 
+    .EquipmentMobile-buttons{
+        display: flex;
+        justify-content: center;
+    }
+    .EquipmentMobile-buttons-prev button{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        border: 1px solid var(--maintext);
+        background-color: var(--orange);
+        background-image: url(arrowBlack.svg);
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: scale(-1, 1);
+        margin-right: 30px;
+
+    }
+    .EquipmentMobile-buttons-next button{
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        border: 1px solid var(--maintext);
+        background-color: var(--orange);
+        background-image: url(arrowBlack.svg);
+        background-size: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        visibility: visible;
+
+    }
+    .EquipmentMobile-buttons-next button:hover{
+        background-color: var(--gray);
+        background-image: url(arrowBlack.svg);
+    }
+    .EquipmentMobile-buttons-prev button:hover{
+        background-color: var(--gray);
+        background-image: url(arrowBlack.svg);
+    }
+    #LastForm {
+        margin-top: 45px;
+        margin-bottom: 105px;
+    }
+    .LastForm-up-headliner {
+        font-size: 24px;
+    }
+    .LastForm-up-description {
+        font-size: 14px;
+        margin-top: 7px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .Footer-map {
+        margin-top: 0px;
+        width: 0px;
+        height: 0px;
+    }
+    .Footer-firstcolumn-logo img{
+        height: 0px;
+    }
+    .Footer-firstcolumn-logo{
+        height: 0px;
+        width: 0px;
+    }
+    .Footer-firstcolumn-text {
+        padding: 0px;
+        font-size: 0px;
+    }
+    .Footer-secondcolumn-1-headliner {
+        font-size: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .Footer-secondcolumn-1-paragraph {
+        font-size: 0px;
+        margin-bottom: 0px;
+    }
+
+
+    #Footer-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    .Footer-mobile-firstblock{
+        display: flex;
+        justify-content: space-around;
+    }
+    .Footer-mobile-firstblock-logo img{
+        height: 40px;
+    }
+    .Footer-mobile-firstblock-numbers{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+    .Footer-mobile-secondblock{
+        display: flex;
+        justify-content: center;
+        margin: 16px 0px;
+        font-size: 16px;
+    }
+    .Footer-mobile-thirdblock{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    .Footer-mobile-thirdblock-insta{
+        background-color: #49c7a5;
+        width: 50px;
+        height: 50px;
+        margin: 0px 4px;
+        border-radius: 100px;
+    }
+    .Footer-mobile-thirdblock-facebook{
+        background-color: #496dc7;
+        width: 50px;
+        height: 50px;
+        margin: 0px 4px;
+        border-radius: 100px;
+    }
+    .Footer-mobile-thirdblock-telegram{
+        background-color: #aec749;
+        width: 50px;
+        height: 50px;
+        margin: 0px 4px;
+        border-radius: 100px;
+    }
+    .Footer-mobile-thirdblock-insta img{
+        width: 35px;
+        margin: 7px;
+    }
+    .Footer-mobile-thirdblock-facebook img{
+        width: 35px;
+        margin: 7px 7px;
+    }
+    .Footer-mobile-thirdblock-telegram img{
+        width: 35px;
+        margin: 7px 6px;
+    }
+    .Footer-mobile-fourthblock{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .Footer-mobile-fourthblock-href {
+        margin-top: 4px;
+    }
+    .Footer-mobile-fourthblock-href a{
+        color: var(--maintext);
+        font-size: 14px;
+    }
+
+
+    .Aboutus-Header-headline1{
+        color: var(--white);
+        font-size: 24px;
+        justify-content: center;
+        display: flex;
+        letter-spacing: 5px;
+        font-family: 'HELEVETICAHEAVY';
+        padding-top: 75px;
+        padding-bottom: 0px;
+    }
+    .Aboutus-Header-headline2{
+        font-size: 0px;
+        margin: 0px;
+        padding: 0px;
+        height: 0px;
+    }
+    .Aboutus-Header-headline3{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-family: "HELEVETICALIGHT";
+        letter-spacing: 1px;
+    }
+    #MainWhyUs {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        justify-content: space-between;
+        padding-bottom: 0px;
+    }
+    .MainWhyUs-desc-title {
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--orange);
+        font-family: "HELEVETICAHEAVY";
+        margin-bottom: 40px;
+    }
+    .MainWhyUs-desc-desc {
+        font: 16px;
+        color: var(--maintext);
+        font-family: "HELEVETICAREGULAR";
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .MainWhyUs-desc-desc-block {
+        font-size: 14px;
+        text-align: center;
+        line-height: 20px;
+        color: var(--maintext);
+        font-family: "HELEVETICALIGHT";
+        margin-bottom: 42px;
+        width: 300px;
+    }
+    .MainWhyUs-photo img{
+        height: 0px;
+        width: 0px;
+    }
+    #Reviews {
+        width: 0%;
+        padding: 0px;
+    }
+    .Reviews-upside-title {
+        font-size: 0px;
+    }
+    .Reviews-upside-desc {
+        font-size: 0px;
+        text-align: center;
+        color: var(--maintext);
+        font-family: "HELEVETICALIGHT";
+        margin-bottom: 0px;
+    }
+    .Reviews-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .Reviews-main-prev img{
+        height: 0px;
+        width: 0px;
+        margin: 0px;
+    }
+    .Reviews-main-next img{
+        height: 0px;
+        width: 0px;
+        margin: 0px;
+    }
+    #RewiewsBox {
+        display: flex;
+        flex-direction: column;
+        height: 0px;
+        width: 0px;
+        background-color: var(--white);
+        border-radius: 0px;
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    }
+    .RewiewsBox-stars {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        height: 0px;
+        width: 0px;
+    }
+    .RewiewsBox-name {
+        margin-top: 0px;
+        margin-left: 0px;
+        font-size: 0px;
+    }
+    .RewiewsBox-desc {
+        padding: 0px;
+        font-size: 0px;
+        line-height: 0px;
+    }
+    .Reviews-more {
+        margin-top: 0px;
+        font-size: 0px;
+    }
+    .Reviews-more a {
+        font-size: 0px;
+        visibility: hidden;
+    }
+    #OurSocialMedia {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 82px;
+    }
+    .OurSocialMedia-leftside-title {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        color: var(--orange);
+        font-family: "HELEVETICAHEAVY";
+        margin-bottom: 5px;
+        padding-left: 35px;
+    }
+    .OurSocialMedia-leftside-title img {
+        height: 35px;
+        transform: rotate(-125deg);
+        position: relative;
+        bottom: 22px;
+        right: 10px;
+    }
+    .OurSocialMedia-leftside-desc {
+        font-size: 15px;
+        text-align: center;
+        color: var(--maintext);
+        font-family: "HELEVETICALIGHT";
+        margin-bottom: 30px;
+        line-height: 20px;
+    }
+    .OurSocialMedia-leftside-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    .OurSocialMedia-leftside-container-box {
+        height: 80px;
+        width: 80px;
+        border-radius: 20px;
+        background-color: orange;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    }
+    .OurSocialMedia-leftside-container-box img {
+        height: 57px;
+        margin: auto 0px;
+    }
+    .OurSocialMedia-righside {
+        height: 0px;
+    }
+    .Smartphone-Area1 {
+        width: 0px;
+        height: 0px;
+        border-radius: 0px;
+        background-color: var(--telephoneColor);
+        box-shadow: 5px 10px 80px 0px rgba(0,0,0,0.3);
+    }
+    .Smartphone-Area2 {
+        width: 0px;
+        height: 0px;
+        border-radius: 0px;
+    }
+    .Smartphone-camera{
+        width: 0px;
+        height: 0px;
+        border-radius: 0px;
+    }
+    .Smartphone-speaker{
+        width: 0px;
+        height: 0px;
+        border-radius: 0px;
+    }
+    .Smartphone-lines1{
+        width: 0px;
+        height: 0px;
+    }
+    .Smartphone-lines2{
+        width: 0px;
+        height: 0px;
+    }
+    .Smartphone-button{
+        border: 0px solid var(--telephoneDark);
+        border-radius: 0px;
+        width: 0px;
+        height: 0px;
+    }
+    .Smartphone-videoBox{
+        display: flex;
+        justify-content: center;
+        bottom: 0px;
+        left: 0px;
+    }
+    .Smartphone-video{
+        height: 0px;
+        width: 0px;
+    }
+
+    #ReviewsMobile {
+        width: 100%;
+        padding: 50px 0px;
+    }
+    .ReviewsMobile-upside-title {
+        font-size: 24px;
+        text-align: center;
+        color: var(--orange);
+        font-family: "HELEVETICAHEAVY";
+        margin-bottom: 10px;
+
+    }
+    .ReviewsMobile-upside-desc {
+        font-size: 16px;
+        text-align: center;
+        color: var(--maintext);
+        font-family: "HELEVETICALIGHT";
+        margin-bottom: 0px;
+    }
+    #RewiewsBoxMobile {
+        display: flex;
+        flex-direction: column;
+        height: 285px;
+        width: 320px;
+        margin: 25px auto;
+        background-color: var(--white);
+        border-radius: 15px;
+        box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.2);
+    }
+    .RewiewsBoxMobile-stars {
+        height: 20px;
+        width: 100px;
+        position: relative;
+        top: 16px;
+        left: 200px;
+        background-image: url(star.svg);
+    }
+    .RewiewsBoxMobile-name {
+        margin-top: 0px;
+        margin-left: 10px;
+        font-size: 16px;
+        color: var(--orange);
+        font-family: "HELEVETICAHEAVY";
+    }
+    .RewiewsBoxMobile-desc {
+        text-align: center;
+        padding: 10px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .ReviewsMobile-more{
+        margin: 30px 0px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .ReviewsMobile-more a{
+        color: var(--orange);
+        font-size: 18px;
+        font-family: "HELEVETICAHEAVY";
+        background-color: var(--white);
+        border-radius: 25px;
+        padding: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+
+    }
+    .KayakAlloysMob-toggle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 35px 0px
+    }
+    .KayakAlloysMob-toggle-button{
+        color: var(--maintext);
+        margin: 10px 0px;
+    }
+    .KayakAlloysMob-toggle-button1{
+        width: 205px;
+        height: 50px;
+        color: var(--blue);
+        background-color: white;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .KayakAlloysMob-toggle-button-box{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 0px;
+        background-color: transparent;
+        transition: 1s;
+        transform: scaleY(0);
+
+        opacity: 0;
+    }
+    .KayakAlloysMob-toggle-button-box_active{
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        transition: 1s;
+        transform: scaleY(1);
+
+        opacity: 1;
+
+    }
+    .KayakAlloysMob-filter{
+        background-color: var(--white);
+        width: 350px;
+        height: 40px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .KayakAlloysMob-filter-text{
+        font-size: 13px;
+    }
+
+    .KayakAlloysMob-KayakAlloysbox{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--white);
+        border-radius: 25px;
+        margin: 20px 0px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+
+        animation-name: opa2;
+        animation-duration: 1s;
+
+        
+    }
+    
+    .KayakAlloysMob-KayakAlloysbox_active{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--white);
+        border-radius: 25px;
+        margin: 20px 0px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+
+        animation-name: opa1;
+        animation-duration: 1.5s;
+    }
+    
+    
+    .KayakAlloysMob-KayakAlloysbox-photo{
+        width: 100px;
+        height: 90px;
+        margin: 10px 0px;
+        background-image: url(kayak.icon.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-radius: 10px;
+    }
+    .KayakAlloysMob-KayakAlloysbox-container-name{
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    .KayakAlloysMob-KayakAlloysbox-days{
+        font-size: 15px;
+        color: var(--blue);
+        font-family: "HELEVETICALIGHT";
+    }
+    .KayakAlloysMob-KayakAlloysbox-date{
+        font-size: 15px;
+        color: var(--blue);
+        font-family: "HELEVETICALIGHT";
+    }
+    .KayakAlloysMob-KayakAlloysbox-nights{
+        font-size: 13px;
+        color: var(--maintext);
+        font-family: "HELEVETICALIGHT";
+    }
+    .KayakAlloysMob-KayakAlloysbox-time{
+        font-size: 13px;
+        color: var(--maintext);
+        font-family: "HELEVETICALIGHT";
+    }
+    .KayakAlloysMob-KayakAlloysbox-price{
+        font-size: 14px;
+        color: var(--blue);
+        font-family: "HELEVETICALIGHT";
+        width: 75px;
+        height: 33px;
+        border: 1px solid var(--blue);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .KayakAlloysMob-KayakAlloysbox-button a{
+        font-size: 14px;
+        background-color: var(--blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .KayakAlloysMob-desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .KayakAlloysMob-desc-title{
+        text-align: center;
+        font-size: 24px;
+        font-family: "HELEVETICAHEAVY";
+        color: var(--blue);
+
+    }
+    .KayakAlloysMob-desc-minititle{
+        text-align: center;
+        font-size: 16px;
+        font-family: "HELEVETICAREGULAR";
+        color: var(--blue);
+        margin: 20px 0px;
+
+    }
+    .KayakAlloysMob-desc-desc{
+        text-align: center;
+        width: 320px;
+        font-size: 15px;
+        line-height: 20px;
+        line-height: 1.8;
+        font-family: "HELEVETICAREGULAR";
+    }
+    .KayakAlloysMob-desc-photo{
+        margin: 20px 0px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+        height: 200px;
+        background-image: url(kayaksBG.JPG);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .EquipmentMobile-title{
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        font-family: "HELEVETICABOLD";
+        color: var(--blackOrange);
+    }
+    #EquipmentMobileBox{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--white);
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+        margin: 15px 0px;
+
+    }
+    .EquipmentMobileBox-picture{
+        width: 100px;
+        height: 100px;
+        border-radius: 15px;
+        margin: 5px 0px;
+    }
+    .EquipmentMobileBox-picture img{
+        width: 100px;
+        height: 100px;
+        border-radius: 15px;
+    }
+    .EquipmentMobileBox-name{
+        margin: 10px 0px;
+        font-size: 18px;
+    }
+    .EquipmentMobileBox-price{
+        font-size: 14px;
+        padding: 3px 5px;
+        border-radius: 10px;
+        border: 1px solid var(--blackOrange);
+        color: var(--blackOrange);
+    }
+    .EquipmentMobileBox-button{
+        font-size: 14px;
+        padding: 10px 10px;
+        color: #fff;
+        background-color: var(--blackOrange);
+    }
+
+    body{
+        background-image: url(back-min.png);
+    }
+    
+}
