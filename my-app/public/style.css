@@ -22,7 +22,20 @@
     font-style: normal;
     src: url(./HELVETICALIGHT.TTF);
 }
+/*
+html{
+    height: 100%;
+    overflow: hidden;
+}
+*/
 body{
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
     font-family: 'HELEVETICAREGULAR';
 }
 
@@ -73,6 +86,49 @@ body{
 .Blocks {
     width: 1175px;
     display: flex;
+    position: relative;
+}
+#phone{
+    display: flex;
+    border-radius: 0px;
+    width: 0px;
+    height: 0px;
+    background-color:  rgba(49,245,0,1);
+    position: absolute;
+    right: 0px;
+    margin: 0px 0px 0px 0px;
+    z-index: 0;
+    top: 0px;
+
+    box-shadow: 0px 0px 0px 0px rgba(0,255,60,0.46);
+}
+#leaf1{
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    right: -125px;
+    transform: rotate(170deg);
+}
+#leaf2{
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    left: -125px;
+    transform: rotate(0deg);
+}
+#leaf3{
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    right: -125px;
+    transform: rotate(170deg);
+}
+#leaf4{
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    left: -125px;
+    transform: rotate(0deg);
 }
 /*STYLES FOR NAVBAR*/
 #GoogleMap{
@@ -87,6 +143,7 @@ body{
     justify-content: space-around;
     background-color: var(--white);
     position: sticky;
+    z-index: 1;
     top: 0;
 
     box-shadow: 0px 0px 3px 0.001px var(--othertext1);
@@ -298,10 +355,9 @@ body{
     display: flex;
 }
 .Header-headline2{
-    font-size: 44px;
-    line-height: 48px;
+    font-size: 36px;
+    line-height: 36px;
     letter-spacing: 4px;
-    text-transform: uppercase;
     font-family: 'HELEVETICALIGHT';
     color: var(--white);
 }
@@ -423,8 +479,9 @@ body{
     color: var(--white);
 }
 .AboutUs-headliner{
-    margin: 90px 0px 30px 0px;
+    margin: 70px 0px;
     font-size: 36px;
+    text-align: center;
     text-transform: uppercase;
     font-family: "HELEVETICAHEAVY";
     color: var(--orange);
@@ -448,6 +505,7 @@ body{
     line-height: 30px;
     font-family: "HELEVETICABOLD";
     color: var(--othertext1);
+    width: 440px;
 }
 .AboutUs-info2{
     margin: 0px 0px 15px 0px;
@@ -455,6 +513,8 @@ body{
     line-height: 30px;
     font-family: "HELEVETICABOLD";
     color: var(--othertext1);
+    width: 440px;
+
 }
 .AboutUs-info3{
     margin: 0px;
@@ -476,7 +536,6 @@ body{
     color: var(--brown);
 }
 .AboutUs-video{
-    margin-top: 90px;
     width: 570px;
     height: 380px;
 }
@@ -768,6 +827,7 @@ body{
     margin-bottom: 25px;
 }
 .OurPros-prosbox-img{
+    height: 100px;
     width: 80px;
     fill: var(--orange);
 }
@@ -1362,6 +1422,7 @@ body{
 }
 .Content-buttonscontainer{
     display: flex;
+    justify-content: center;
 }
 .Content-buttonscontainer-button{
     border: none;
@@ -1369,7 +1430,7 @@ body{
     color: var(--white);
     font-size: 20px;
     padding: 15px 40px;
-    margin-top: -40px;
+    margin-top: 12px;
     margin-right: 5px;
     border-radius: 10px 10px 0px 0px;
 }

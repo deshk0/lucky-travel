@@ -17,11 +17,16 @@ export class Equipment extends React.Component{
         return(
             <div>
                 <Helmet>
-                    <title>Аренда Туристического Снаряжения в Полтаве — Lucky Travel</title>
+                    <title>Аренда байдарок в Полтаве — Lucky Travel</title>
                     <meta charSet="utf-8" />
+                    <meta 
+                        name="keywords"
+                        content="байдарки Полтава, прокат байдарок в Полтаве, аренда байдарок в Полтаве"
+                    />
                     <meta
                         name="description"
-                        content="Аренда самого удобного и надежного туристического снаряжения в полтаве! При аренде от 5-и дней – Скидка!"/>
+                        content="Аренда самого удобного и надежного туристического снаряжения в полтаве! При аренде от 5-и дней – Скидка!"
+                    />
                 </Helmet>
                 <Navbar equipmentcolor="var(--blackOrange)" />
                 <div className="GoToMobile"><a href="equipmentmobile">Нажмите чтобы перейти в мобильную версию сайта</a></div>
@@ -45,10 +50,12 @@ class Header extends React.Component {
         return(
             <div id="Header">
                 <div className="Wrapper">
-                   <h1 style={{color:'var(--blackOrange)',marginBottom:'0px',fontSize:'50px'}} className='Header-headline1'>АРЕНДА</h1>
-                   <h2 className='Header-headline2' style={{margin:'95px 0px',fontSize:'50px'}}>
-                        лучшего туристического<br />
-                        снаряжения в полтаве<br />
+                    <h1 style={{color:'var(--blackOrange)',marginBottom:'0px',fontSize:'50px',textTransform:'uppercase'}} className='Header-headline1'>
+                       Прокат байдарок в Полтаве
+                    </h1>
+                   <h2 className='Header-headline2' style={{margin:'65px 0px',fontSize:'36px'}}>
+                        Аренда байдарок и туристического<br />
+                        снаряжения в Полтаве<br />
                     </h2>
                     <div style={{color:"white",fontFamily:'HELEVETICAREGULAR',fontSize:'24px'}}>Оставтьте заявку для подробной информации</div>
                     <div>

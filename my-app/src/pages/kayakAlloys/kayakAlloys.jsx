@@ -18,21 +18,46 @@ export class KayakAlloys extends React.Component{
             <div>
                 <Helmet>
                     <meta charSet="utf-8" />
+                    <meta 
+                        name="keywords"
+                        content="байдарки Полтава, сплавы на байдарках в Полтаве, байдарочные сплавы в Полтаве"
+                    />
                     <meta
                       name="description"
-                      content="Чистая река, сосновые боры, уютные песчаные пляжи, великолепные пейзажи - все это и многое другое, Вы встретите в Lucky Travel!"
+                      content="Команда Lucky Travel уже давно организовывает лучшие байдарочные сплавы в Полтаве. Мы предлагаем вам спуститься вниз по самым захватывающим рекам Полтавы: Ворскла, Псёл, Сула, Удай. Сплавы на байдарках – отличный активный отдых для вас и ваших друзей. Байдарки в Полтаве – новый вид активного отдыха, который объединяет и помогает отдохнуть от рутины города! "
                     />
-                    <title>Лучшие Байдарочные сплавы в Полтаве — Lucky Travel</title>
+                    <title>Байдарочные сплавы в Полтаве — Lucky Travel</title>
 
                     
                 </Helmet>
                 <Navbar kayakalloyscolor="var(--blue)" />
                 <div className="GoToMobile"><a href="/kayakalloysmob">Нажмите чтобы перейти в мобильную версию сайта</a></div>
-                <div style={{width:"100%",height:"150px", backgroundColor:'whitesmoke',marginBottom:'-34px'}}></div>
+                <Header />
                 <div className="Wrapper">
                     <Content />
                 </div>
                 <Footer />
+            </div>
+        )
+    }
+}
+class Header extends React.Component {
+    constructor(){
+        super()
+    }
+
+    render(){
+        return(
+            <div id="Header" style={{height:'575px',}}>
+                <div className="Wrapper">
+                   <h1 style={{color:'var(--blue)',textTransform:'uppercase',marginBottom:'0px',fontSize:'40px'}} className='Header-headline1'>
+                       Сплавы на байдарках в Полтаве
+                    </h1>
+                   <h2 className='Header-headline2' style={{margin:'65px 0px',fontSize:'30px'}}>
+                        Сплавы по реке Ворскла, Псёл, Удай и другие.<br />
+                        Корпаративные сплавы на байдарках в Полтаве<br />
+                    </h2>
+                </div>
             </div>
         )
     }
@@ -151,9 +176,9 @@ class KayakAlloysSide extends React.Component{
         //const newArr = arr.map(item => item.number)
         //console.log(newArr)
         const newArr1 = arr.sort(function(a, b) {
-            if (a.props.priceI > b.props.priceI) return 1;
+            if (a.props.priceI > b.props.priceI) return -1;
             if (a.props.priceI == b.props.priceI) return 0;
-            if (a.props.priceI < b.props.priceI) return -1;
+            if (a.props.priceI < b.props.priceI) return 1;
           });
         //const newArr2 = newArr1.map(item => item.box)
           
@@ -176,9 +201,9 @@ class KayakAlloysSide extends React.Component{
         //const newArr = arr.map(item => item.number)
         //console.log(newArr)
         const newArr1 = arr.sort(function(a, b) {
-            if (a.props.priceI > b.props.priceI) return -1;
+            if (a.props.priceI > b.props.priceI) return 1;
             if (a.props.priceI == b.props.priceI) return 0;
-            if (a.props.priceI < b.props.priceI) return 1;
+            if (a.props.priceI < b.props.priceI) return -1;
           });
         //const newArr2 = newArr1.map(item => item.box)
           

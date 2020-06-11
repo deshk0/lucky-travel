@@ -20,6 +20,7 @@ export class HomePage extends React.Component{
         return(
             <div>
                 <Navbar homecolor="var(--orange)" />
+                <Phone />
                 <div>
                    <Header />
                 </div>
@@ -37,6 +38,82 @@ export class HomePage extends React.Component{
         )
     }
 }
+class Phone extends React.Component{
+    constructor(){
+        super()
+    }
+    componentDidMount(){
+        window.addEventListener('scroll', () =>{
+            const value = window.scrollY;
+            let phone = document.getElementById('phone')
+            
+            phone.style.top = value + 'px'
+
+        })
+    }
+
+    render(){
+        return(
+            <a id="phone" href="tel:+380507531408">
+                <img style={{transition:'1s', margin:'auto', width:'35px',height:'35px'}} src="phone.svg" alt="phone"></img>
+            </a>
+        )
+    }
+}
+
+
+class ParalaxBg extends React.Component{
+    constructor(){
+        super()
+    }
+    componentDidMount(){
+        window.addEventListener('scroll', () =>{
+            const value = window.scrollY;
+            let leaf1 = document.getElementById('leaf1')
+            let leaf2 = document.getElementById('leaf2')
+            
+
+            leaf1.style.top = value * 0.3 + 'px'
+            leaf2.style.top = value * 0.5 + 'px'
+
+        })
+    }
+
+    render(){
+        return(
+            <div>
+                <img id='leaf1' src="leaf.png"></img>
+                <img id='leaf2' src="leaf.png"></img>
+            </div>
+        )
+    }
+}
+class ParalaxBg1 extends React.Component{
+    constructor(){
+        super()
+    }
+    componentDidMount(){
+        window.addEventListener('scroll', () =>{
+            const value = window.scrollY;
+            let leaf3 = document.getElementById('leaf3')
+            let leaf4 = document.getElementById('leaf4')
+            
+
+            leaf3.style.top = value * 0.3 + 'px'
+            leaf4.style.top = value * 0.5 + 'px'
+
+        })
+    }
+
+    render(){
+        return(
+            <div>
+                <img id='leaf3' src="leaf.png"></img>
+                <img id='leaf4' src="leaf.png"></img>
+            </div>
+        )
+    }
+}
 
 //Header block
 class Header extends React.Component{
@@ -49,18 +126,17 @@ class Header extends React.Component{
         return(
             <div id="Header">
                 <div className="Wrapper">
-                   <div className='Header-headlinebox'><h1 className='Header-headline1'>LUCKY TRAVEL</h1></div>
-                   <h2 className='Header-headline2'>
-                        Лучшие<br />
-                        предложения<br />
-                        для вашего активного<br />
-                        отдыха
-                    </h2>
+                   <div className='Header-headlinebox'><div className='Header-headline1' style={{color:'var(--orange)'}}>LUCKY TRAVEL</div></div>
+                   <h1 className='Header-headline2'> 
+                        Байдарочные сплавы,<br />
+                        походы на байдарках,<br />
+                        авторские туры и активный отдых<br />
+                        в Полтаве
+                    </h1>
                     
                     <div style={{display:'flex',justifyContent:'center'}}><h2 className='Header-headline3'>Байдарочные сплавы и походы</h2></div>
                      
                     <div className='Header-line'></div>
-                    <div className="Header-form-ourUs"><a href="/aboutUs">УЗНАТЬ БОЛЬШЕ</a></div>
                     <div className="Header-form-ourUs1">Оставтьте заявку для подробной информации</div>
                     <div>
                         <form action="telegram.php" method="POST" className="Header-form" >
@@ -90,33 +166,37 @@ class AboutUs extends React.Component{
         super()
     }
 
-
     render(){
         return(
             <div className="Blocks">
+                <ParalaxBg />
                 <div id='AboutUs'>
+                <div className="AboutUs-headliner">О нас</div>
+
                     <div style={{display:'flex',justifyContent:'space-between'}}>
+                        
                     <div>
-                        <div className="AboutUs-headliner">О нас</div>
                         <div className="AboutUs-smallheadliner">Качество туров проверенное временем</div>
                         <div className="AboutUs-line"></div>
                         <div className="AboutUs-info1">
-                            Наша команда профессионалов месяцами изучает маршруты,<br />
-                            историю и тропы, что бы сделать для вас самые захватывающие<br />
-                            и запоминающиеся авторские туры.
+                            <b>Lucky Travel</b> – <b>Клуб активного отдыха в Полтаве!</b> Мы организовываем 
+                            <b> байдарочные сплавы</b> и <b>авторские туры в Полтаве</b> уже не первый год, 
+                            поэтому походы с Lucky Travel – это всегда приключение!
                         </div>
                         <div className="AboutUs-info2">
-                            Приглашаем Вас посетить самые захватывающие места<br />
-                            Полтавы, сплавится вниз по крутым течениям Ворсклы,<br />
-                            а так же побывать в десятках мест по всему миру!
+                            Для вашего отдыха мы предлагаем: <b>Байдарочные сплавы</b>, <b>Авторские туры</b>,
+                            Незабываемые <b>походы</b> – все, что бы сделать ваш <b>активный отдых</b> по 
+                            настоящему волшебным и незабываемым, вместе с <b>Lucky Travel</b>!
                         </div>
                         <div className="AboutUs-info3">
-                            Наша команда профессионалов месяцами<br />
-                            изучает маршруты,историю и тропы,<br />
-                            что бы сделать для вас<br /> самые захватывающие и запоминающиеся<br />
-                            авторские туры.
+                            <b>Lucky Travel</b> – <b>Клуб активного отдыха в Полтаве!</b> Мы организовываем 
+                            <b>байдарочные сплавы</b> и <b>авторские туры в Полтаве</b> уже не первый год, 
+                            поэтому походы с Lucky Travel – это всегда приключение!
                         </div>
-                        <div className="AboutUs-info4">Приглашаем Вас путешествовать  вместе с нами ! На байдарках по рекам Украины, горным вершинам и морям по всему миру
+                        <div className="AboutUs-info4">
+                            Для вашего отдыха мы предлагаем: <b>Байдарочные сплавы</b>, <b>Авторские туры</b>,
+                            Незабываемые <b>походы</b> – все, что бы сделать ваш <b>активный отдых</b> по 
+                            настоящему волшебным и незабываемым, вместе с <b>Lucky Travel</b>!
                         </div>
                         <div className="AboutUs-more"><a href="/aboutUs">УЗНАТЬ БОЛЬШЕ</a></div>
                     </div>
@@ -158,6 +238,7 @@ class OurTours extends React.Component{
     render(){
         return(
             <div className="Blocks">
+                
                 <div id="OurTours">
                     <div>
                         <div className="OurTours-headliner">Мы предлагаем</div>
@@ -217,6 +298,7 @@ class ChooseYourTour extends React.Component{
     render(){
         return(
             <div className="Blocks">
+                <ParalaxBg1 />
                 <div id="ChooseYourTour">
                     <div>
                         <form action="telegram.php" method="POST" className="ChooseYourTour-form" >
